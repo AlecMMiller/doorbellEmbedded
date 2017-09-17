@@ -1,9 +1,9 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [v F15119 `(v ~T0 @X0 0 tf ]
 [v F15122 `(v ~T0 @X0 0 tf ]
-"67 main.c
-[c E15395 0 1 2 3 4 .. ]
-[n E15395 connection_modes STARTING PAIRED UNPAIRED PAIRING DISCONNECTED  ]
+"66 main.c
+[c E15387 0 1 2 3 4 .. ]
+[n E15387 connection_modes STARTING PAIRED UNPAIRED PAIRING DISCONNECTED  ]
 "954 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f18875.h
 [s S48 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S48 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
@@ -28,9 +28,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _WiFly_ReadChar `(uc ~T0 @X0 0 ef ]
 "43
 [v _WiFly_SendCMD_DoubleArg `(v ~T0 @X0 0 ef3`*Cuc`*Cuc`*Cuc ]
-"188 main.c
-[c E15401 0 1 2 .. ]
-[n E15401 returns SUCCESS FAILED TX_ERROR  ]
+"187 main.c
+[c E15393 0 1 2 .. ]
+[n E15393 returns SUCCESS FAILED TX_ERROR  ]
 "40 mcc_generated_files/WiFly.h
 [v _Clear_RX_Buffer `(v ~T0 @X0 0 ef ]
 "45
@@ -64,8 +64,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p i __delay ]
 "29 mcc_generated_files/Relay_app.h
 [v _RELAY_RL1_Disengage `(v ~T0 @X0 0 ef ]
-"27 mcc_generated_files/EXAMPLE_WiFly.h
-[v _WiFly_Example_InitializeAsClient `(v ~T0 @X0 0 ef2`*Cuc`*Cuc ]
+"1140 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f18875.h
+[s S54 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S54 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"1139
+[u S53 `S54 1 ]
+[n S53 . . ]
+"1151
+[v _LATDbits `VS53 ~T0 @X0 0 e@25 ]
+"48 mcc_generated_files/WiFly.h
+[v _WiFly_FactoryReset `(v ~T0 @X0 0 ef ]
+"44
+[v _WiFly_SendCMD `(v ~T0 @X0 0 ef1`*Cuc ]
+"42
+[v _WiFly_SendCMD_SingleArg `(v ~T0 @X0 0 ef2`*Cuc`*Cuc ]
+"49
+[v _WiFly_SaveConfig `(v ~T0 @X0 0 ef ]
+"46
+[v _WiFly_CheckRecv `(v ~T0 @X0 0 ef1`*Cuc ]
 [p mainexit ]
 "75 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
@@ -85,8 +101,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INTCONbits `VS25 ~T0 @X0 0 e@11 ]
 "115 C:\Program Files (x86)\Microchip\xc8\v1.42\include\eeprom_routines.h
 [v _eeprom_read `(uc ~T0 @X0 0 ef1`uc ]
-"48 mcc_generated_files/WiFly.h
-[v _WiFly_FactoryReset `(v ~T0 @X0 0 ef ]
 "512 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f18875.h
 [s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S32 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
@@ -14057,9 +14071,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 "51
 [v _inCMD `uc ~T0 @X0 1 e ]
 [; ;WiFly.h: 51: bool inCMD;
-[; ;EXAMPLE_WiFly.h: 27: void WiFly_Example_InitializeAsClient(const char* ssid, const char* password);
-[; ;EXAMPLE_WiFly.h: 30: void WiFly_Example_Connect(const char* addr, const char* port);
-[; ;EXAMPLE_WiFly.h: 33: void WiFly_Example_SendMessages(void);
 [; ;__size_t.h: 4: typedef unsigned size_t;
 [; ;stddef.h: 6: typedef int ptrdiff_t;
 [; ;string.h: 14: extern void * memcpy(void *, const void *, size_t);
@@ -14118,7 +14129,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
 [; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 195: extern int printf(const char *, ...);
-"55 main.c
+"54 main.c
 [v _failedStr `uc ~T0 @X0 -> 0 `x e ]
 [i _failedStr
 :U ..
@@ -14131,8 +14142,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;main.c: 55: char failedStr[] = "FAILED";
-"56
+[; ;main.c: 54: char failedStr[] = "FAILED";
+"55
 [v _errStr `uc ~T0 @X0 -> 0 `x e ]
 [i _errStr
 :U ..
@@ -14142,540 +14153,540 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;main.c: 56: char errStr[] = "ERR";
-[; ;main.c: 58: enum connection_modes {
-[; ;main.c: 59: STARTING, PAIRED, UNPAIRED, PAIRING, DISCONNECTED
-[; ;main.c: 60: };
-[; ;main.c: 62: enum returns {
-[; ;main.c: 63: SUCCESS, FAILED, TX_ERROR
-[; ;main.c: 64: };
-"66
+[; ;main.c: 55: char errStr[] = "ERR";
+[; ;main.c: 57: enum connection_modes {
+[; ;main.c: 58: STARTING, PAIRED, UNPAIRED, PAIRING, DISCONNECTED
+[; ;main.c: 59: };
+[; ;main.c: 61: enum returns {
+[; ;main.c: 62: SUCCESS, FAILED, TX_ERROR
+[; ;main.c: 63: };
+"65
 [v _UID `uc ~T0 @X0 1 e ]
 [i _UID
 -> -> 0 `i `uc
 ]
-[; ;main.c: 66: uint8_t UID = 0;
-"67
+[; ;main.c: 65: uint8_t UID = 0;
+"66
 [v _mode `uc ~T0 @X0 1 e ]
 [i _mode
--> . `E15395 0 `uc
+-> . `E15387 0 `uc
 ]
-[; ;main.c: 67: uint8_t mode = STARTING;
-"68
+[; ;main.c: 66: uint8_t mode = STARTING;
+"67
 [v _pingTime `uc ~T0 @X0 1 e ]
 [i _pingTime
 -> -> 0 `i `uc
 ]
-[; ;main.c: 68: uint8_t pingTime = 0;
-"70
+[; ;main.c: 67: uint8_t pingTime = 0;
+"69
 [v _indStatus `uc ~T0 @X0 1 e ]
 [i _indStatus
 -> -> 0 `i `uc
 ]
-[; ;main.c: 70: bool indStatus = 0;
-"72
+[; ;main.c: 69: bool indStatus = 0;
+"71
 [v _ClearIndicators `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 72: void ClearIndicators(){
+[; ;main.c: 71: void ClearIndicators(){
 [e :U _ClearIndicators ]
 [f ]
-[; ;main.c: 73: indStatus = 0;
-"73
+[; ;main.c: 72: indStatus = 0;
+"72
 [e = _indStatus -> -> 0 `i `uc ]
-[; ;main.c: 74: LATAbits.LATA4 = 0;
-"74
+[; ;main.c: 73: LATAbits.LATA4 = 0;
+"73
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 75: LATAbits.LATA5 = 0;
-"75
+[; ;main.c: 74: LATAbits.LATA5 = 0;
+"74
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 76: LATAbits.LATA6 = 0;
-"76
+[; ;main.c: 75: LATAbits.LATA6 = 0;
+"75
 [e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
-[; ;main.c: 77: LATAbits.LATA7 = 0;
-"77
+[; ;main.c: 76: LATAbits.LATA7 = 0;
+"76
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 78: }
-"78
+[; ;main.c: 77: }
+"77
 [e :UE 1622 ]
 }
-"80
+"79
 [v _SetIndication `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main.c: 80: void SetIndication(bool set) {
+[; ;main.c: 79: void SetIndication(bool set) {
 [e :U _SetIndication ]
 [v _set `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 81: indStatus = set;
-"81
+[; ;main.c: 80: indStatus = set;
+"80
 [e = _indStatus _set ]
-[; ;main.c: 83: if (UID & 1) {
-"83
+[; ;main.c: 82: if (UID & 1) {
+"82
 [e $ ! != & -> _UID `i -> 1 `i -> 0 `i 1624  ]
 {
-[; ;main.c: 84: LATAbits.LATA4 = set;
-"84
+[; ;main.c: 83: LATAbits.LATA4 = set;
+"83
 [e = . . _LATAbits 0 4 _set ]
-"85
+"84
 }
 [e :U 1624 ]
-[; ;main.c: 85: }
-[; ;main.c: 86: if (UID & 1 << 1) {
-"86
+[; ;main.c: 84: }
+[; ;main.c: 85: if (UID & 1 << 1) {
+"85
 [e $ ! != & -> _UID `i << -> 1 `i -> 1 `i -> 0 `i 1625  ]
 {
-[; ;main.c: 87: LATAbits.LATA5 = set;
-"87
+[; ;main.c: 86: LATAbits.LATA5 = set;
+"86
 [e = . . _LATAbits 0 5 _set ]
-"88
+"87
 }
 [e :U 1625 ]
-[; ;main.c: 88: }
-[; ;main.c: 89: if (UID & 1 << 2) {
-"89
+[; ;main.c: 87: }
+[; ;main.c: 88: if (UID & 1 << 2) {
+"88
 [e $ ! != & -> _UID `i << -> 1 `i -> 2 `i -> 0 `i 1626  ]
 {
-[; ;main.c: 90: LATAbits.LATA6 = set;
-"90
+[; ;main.c: 89: LATAbits.LATA6 = set;
+"89
 [e = . . _LATAbits 0 6 _set ]
-"91
+"90
 }
 [e :U 1626 ]
-[; ;main.c: 91: }
-[; ;main.c: 92: if (UID & 1 << 3) {
-"92
+[; ;main.c: 90: }
+[; ;main.c: 91: if (UID & 1 << 3) {
+"91
 [e $ ! != & -> _UID `i << -> 1 `i -> 3 `i -> 0 `i 1627  ]
 {
-[; ;main.c: 93: LATAbits.LATA7 = set;
-"93
+[; ;main.c: 92: LATAbits.LATA7 = set;
+"92
 [e = . . _LATAbits 0 7 _set ]
-"94
+"93
 }
 [e :U 1627 ]
+[; ;main.c: 93: }
 [; ;main.c: 94: }
-[; ;main.c: 95: }
-"95
+"94
 [e :UE 1623 ]
 }
-"97
+"96
 [v _goto_mode `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main.c: 97: void goto_mode(uint8_t target) {
+[; ;main.c: 96: void goto_mode(uint8_t target) {
 [e :U _goto_mode ]
 [v _target `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 98: mode = target;
-"98
+[; ;main.c: 97: mode = target;
+"97
 [e = _mode _target ]
-[; ;main.c: 99: switch (mode) {
-"99
+[; ;main.c: 98: switch (mode) {
+"98
 [e $U 1630  ]
 {
-[; ;main.c: 100: case PAIRED:
-"100
-[e :U 1631 ]
-[; ;main.c: 101: TMR2_StopTimer();
-"101
-[e ( _TMR2_StopTimer ..  ]
-[; ;main.c: 102: SetIndication(1);
-"102
-[e ( _SetIndication (1 -> -> 1 `i `uc ]
-[; ;main.c: 103: TMR4_StartTimer();
-"103
-[e ( _TMR4_StartTimer ..  ]
-[; ;main.c: 104: break;
-"104
-[e $U 1629  ]
-[; ;main.c: 105: case DISCONNECTED:
-"105
-[e :U 1632 ]
-[; ;main.c: 106: T2PR = 40;
-"106
-[e = _T2PR -> -> 40 `i `uc ]
-[; ;main.c: 107: TMR2_StartTimer();
-"107
-[e ( _TMR2_StartTimer ..  ]
-[; ;main.c: 108: break;
-"108
-[e $U 1629  ]
-[; ;main.c: 109: case PAIRING:
-"109
-[e :U 1633 ]
-[; ;main.c: 110: T2PR = 10;
-"110
-[e = _T2PR -> -> 10 `i `uc ]
-[; ;main.c: 111: TMR2_StartTimer();
-"111
-[e ( _TMR2_StartTimer ..  ]
-[; ;main.c: 112: break;
-"112
-[e $U 1629  ]
-[; ;main.c: 113: case UNPAIRED:
-"113
-[e :U 1634 ]
-[; ;main.c: 114: TMR2_StopTimer();
-"114
-[e ( _TMR2_StopTimer ..  ]
-[; ;main.c: 115: TMR4_StopTimer();
-"115
-[e ( _TMR4_StopTimer ..  ]
-[; ;main.c: 116: ClearIndicators();
-"116
-[e ( _ClearIndicators ..  ]
-[; ;main.c: 117: break;
-"117
-[e $U 1629  ]
-"118
-}
-[; ;main.c: 118: }
-[e $U 1629  ]
+[; ;main.c: 99: case PAIRED:
 "99
+[e :U 1631 ]
+[; ;main.c: 100: TMR2_StopTimer();
+"100
+[e ( _TMR2_StopTimer ..  ]
+[; ;main.c: 101: SetIndication(1);
+"101
+[e ( _SetIndication (1 -> -> 1 `i `uc ]
+[; ;main.c: 102: TMR4_StartTimer();
+"102
+[e ( _TMR4_StartTimer ..  ]
+[; ;main.c: 103: break;
+"103
+[e $U 1629  ]
+[; ;main.c: 104: case DISCONNECTED:
+"104
+[e :U 1632 ]
+[; ;main.c: 105: T2PR = 40;
+"105
+[e = _T2PR -> -> 40 `i `uc ]
+[; ;main.c: 106: TMR2_StartTimer();
+"106
+[e ( _TMR2_StartTimer ..  ]
+[; ;main.c: 107: break;
+"107
+[e $U 1629  ]
+[; ;main.c: 108: case PAIRING:
+"108
+[e :U 1633 ]
+[; ;main.c: 109: T2PR = 10;
+"109
+[e = _T2PR -> -> 10 `i `uc ]
+[; ;main.c: 110: TMR2_StartTimer();
+"110
+[e ( _TMR2_StartTimer ..  ]
+[; ;main.c: 111: break;
+"111
+[e $U 1629  ]
+[; ;main.c: 112: case UNPAIRED:
+"112
+[e :U 1634 ]
+[; ;main.c: 113: TMR2_StopTimer();
+"113
+[e ( _TMR2_StopTimer ..  ]
+[; ;main.c: 114: TMR4_StopTimer();
+"114
+[e ( _TMR4_StopTimer ..  ]
+[; ;main.c: 115: ClearIndicators();
+"115
+[e ( _ClearIndicators ..  ]
+[; ;main.c: 116: break;
+"116
+[e $U 1629  ]
+"117
+}
+[; ;main.c: 117: }
+[e $U 1629  ]
+"98
 [e :U 1630 ]
-[e [\ _mode , $ -> . `E15395 1 `uc 1631
- , $ -> . `E15395 4 `uc 1632
- , $ -> . `E15395 3 `uc 1633
- , $ -> . `E15395 2 `uc 1634
+[e [\ _mode , $ -> . `E15387 1 `uc 1631
+ , $ -> . `E15387 4 `uc 1632
+ , $ -> . `E15387 3 `uc 1633
+ , $ -> . `E15387 2 `uc 1634
  1629 ]
-"118
+"117
 [e :U 1629 ]
-[; ;main.c: 119: }
-"119
+[; ;main.c: 118: }
+"118
 [e :UE 1628 ]
 }
-"121
+"120
 [v _CheckResponse `(uc ~T0 @X0 1 ef3`*Cuc`*Cuc`*Cuc ]
 {
-[; ;main.c: 121: uint8_t CheckResponse(const char * chkString1, const char * chkString2, const char * chkString3) {
+[; ;main.c: 120: uint8_t CheckResponse(const char * chkString1, const char * chkString2, const char * chkString3) {
 [e :U _CheckResponse ]
 [v _chkString1 `*Cuc ~T0 @X0 1 r1 ]
 [v _chkString2 `*Cuc ~T0 @X0 1 r2 ]
 [v _chkString3 `*Cuc ~T0 @X0 1 r3 ]
 [f ]
-"122
+"121
 [v _length1 `ui ~T0 @X0 1 a ]
-[; ;main.c: 122: size_t length1 = strlen(chkString1);
+[; ;main.c: 121: size_t length1 = strlen(chkString1);
 [e = _length1 ( _strlen (1 _chkString1 ]
-"123
+"122
 [v _i1 `ui ~T0 @X0 1 a ]
-[; ;main.c: 123: size_t i1 = 0;
+[; ;main.c: 122: size_t i1 = 0;
 [e = _i1 -> -> 0 `i `ui ]
-"124
+"123
 [v _length2 `ui ~T0 @X0 1 a ]
-[; ;main.c: 124: size_t length2 = strlen(chkString2);
+[; ;main.c: 123: size_t length2 = strlen(chkString2);
 [e = _length2 ( _strlen (1 _chkString2 ]
-"125
+"124
 [v _i2 `ui ~T0 @X0 1 a ]
-[; ;main.c: 125: size_t i2 = 0;
+[; ;main.c: 124: size_t i2 = 0;
 [e = _i2 -> -> 0 `i `ui ]
-"126
+"125
 [v _length3 `ui ~T0 @X0 1 a ]
-[; ;main.c: 126: size_t length3 = strlen(chkString3);
+[; ;main.c: 125: size_t length3 = strlen(chkString3);
 [e = _length3 ( _strlen (1 _chkString3 ]
-"127
+"126
 [v _i3 `ui ~T0 @X0 1 a ]
-[; ;main.c: 127: size_t i3 = 0;
+[; ;main.c: 126: size_t i3 = 0;
 [e = _i3 -> -> 0 `i `ui ]
-[; ;main.c: 129: while (i1 < length1 && i2 < length2 && i3 < length3) {
-"129
+[; ;main.c: 128: while (i1 < length1 && i2 < length2 && i3 < length3) {
+"128
 [e $U 1636  ]
 [e :U 1637 ]
 {
-"130
+"129
 [v _input `uc ~T0 @X0 1 a ]
-[; ;main.c: 130: char input = WiFly_ReadChar();
+[; ;main.c: 129: char input = WiFly_ReadChar();
 [e = _input ( _WiFly_ReadChar ..  ]
-[; ;main.c: 131: if (input == chkString1[i1]) {
-"131
+[; ;main.c: 130: if (input == chkString1[i1]) {
+"130
 [e $ ! == -> _input `i -> *U + _chkString1 * -> _i1 `ux -> -> # *U _chkString1 `ui `ux `i 1639  ]
 {
-[; ;main.c: 132: i1++;
-"132
+[; ;main.c: 131: i1++;
+"131
 [e ++ _i1 -> -> 1 `i `ui ]
-"133
+"132
 }
-[; ;main.c: 133: } else {
+[; ;main.c: 132: } else {
 [e $U 1640  ]
 [e :U 1639 ]
 {
-[; ;main.c: 134: i1 = 0;
-"134
+[; ;main.c: 133: i1 = 0;
+"133
 [e = _i1 -> -> 0 `i `ui ]
-"135
+"134
 }
 [e :U 1640 ]
-[; ;main.c: 135: }
-[; ;main.c: 137: if (input == chkString2[i2]) {
-"137
+[; ;main.c: 134: }
+[; ;main.c: 136: if (input == chkString2[i2]) {
+"136
 [e $ ! == -> _input `i -> *U + _chkString2 * -> _i2 `ux -> -> # *U _chkString2 `ui `ux `i 1641  ]
 {
-[; ;main.c: 138: i2++;
-"138
+[; ;main.c: 137: i2++;
+"137
 [e ++ _i2 -> -> 1 `i `ui ]
-"139
+"138
 }
-[; ;main.c: 139: } else {
+[; ;main.c: 138: } else {
 [e $U 1642  ]
 [e :U 1641 ]
 {
-[; ;main.c: 140: i2 = 0;
-"140
+[; ;main.c: 139: i2 = 0;
+"139
 [e = _i2 -> -> 0 `i `ui ]
-"141
+"140
 }
 [e :U 1642 ]
-[; ;main.c: 141: }
-[; ;main.c: 143: if (input == chkString3[i3]) {
-"143
+[; ;main.c: 140: }
+[; ;main.c: 142: if (input == chkString3[i3]) {
+"142
 [e $ ! == -> _input `i -> *U + _chkString3 * -> _i3 `ux -> -> # *U _chkString3 `ui `ux `i 1643  ]
 {
-[; ;main.c: 144: i3++;
-"144
+[; ;main.c: 143: i3++;
+"143
 [e ++ _i3 -> -> 1 `i `ui ]
-"145
+"144
 }
-[; ;main.c: 145: } else {
+[; ;main.c: 144: } else {
 [e $U 1644  ]
 [e :U 1643 ]
 {
-[; ;main.c: 146: i3 = 0;
-"146
+[; ;main.c: 145: i3 = 0;
+"145
 [e = _i3 -> -> 0 `i `ui ]
-"147
+"146
 }
 [e :U 1644 ]
-"148
+"147
 }
 [e :U 1636 ]
-"129
+"128
 [e $ && && < _i1 _length1 < _i2 _length2 < _i3 _length3 1637  ]
 [e :U 1638 ]
+[; ;main.c: 146: }
 [; ;main.c: 147: }
-[; ;main.c: 148: }
-[; ;main.c: 150: if (i1 == length1) {
-"150
+[; ;main.c: 149: if (i1 == length1) {
+"149
 [e $ ! == _i1 _length1 1645  ]
 {
-[; ;main.c: 151: return 1;
-"151
+[; ;main.c: 150: return 1;
+"150
 [e ) -> -> 1 `i `uc ]
 [e $UE 1635  ]
-"152
+"151
 }
-[; ;main.c: 152: } else if (i2 == length2) {
+[; ;main.c: 151: } else if (i2 == length2) {
 [e $U 1646  ]
 [e :U 1645 ]
 [e $ ! == _i2 _length2 1647  ]
 {
-[; ;main.c: 153: return 2;
-"153
+[; ;main.c: 152: return 2;
+"152
 [e ) -> -> 2 `i `uc ]
 [e $UE 1635  ]
-"154
+"153
 }
-[; ;main.c: 154: } else {
+[; ;main.c: 153: } else {
 [e $U 1648  ]
 [e :U 1647 ]
 {
-[; ;main.c: 155: return 3;
-"155
+[; ;main.c: 154: return 3;
+"154
 [e ) -> -> 3 `i `uc ]
 [e $UE 1635  ]
-"156
+"155
 }
 [e :U 1648 ]
 [e :U 1646 ]
-[; ;main.c: 156: }
-[; ;main.c: 158: }
-"158
+[; ;main.c: 155: }
+[; ;main.c: 157: }
+"157
 [e :UE 1635 ]
 }
-"160
+"159
 [v _connect_socket `(v ~T0 @X0 1 ef2`*Cuc`*Cuc ]
 {
-[; ;main.c: 160: void connect_socket(const char* addr, const char* port) {
+[; ;main.c: 159: void connect_socket(const char* addr, const char* port) {
 [e :U _connect_socket ]
 [v _addr `*Cuc ~T0 @X0 1 r1 ]
 [v _port `*Cuc ~T0 @X0 1 r2 ]
 [f ]
-[; ;main.c: 161: do {
-"161
+[; ;main.c: 160: do {
+"160
 [e :U 1652 ]
 {
-[; ;main.c: 162: WiFly_SendCMD_DoubleArg("open %s %s\r\n", addr, port);
-"162
+[; ;main.c: 161: WiFly_SendCMD_DoubleArg("open %s %s\r\n", addr, port);
+"161
 [e ( _WiFly_SendCMD_DoubleArg (3 , , :s 1C _addr _port ]
-"163
+"162
 }
-[; ;main.c: 163: } while (CheckResponse(openStr, failedStr, errStr) != 1);
+[; ;main.c: 162: } while (CheckResponse(openStr, failedStr, errStr) != 1);
 [e $ != -> ( _CheckResponse (3 , , &U _openStr -> &U _failedStr `*Cuc -> &U _errStr `*Cuc `i -> 1 `i 1652  ]
 [e :U 1651 ]
-[; ;main.c: 165: inCMD = 0;
-"165
+[; ;main.c: 164: inCMD = 0;
+"164
 [e = _inCMD -> -> 0 `i `uc ]
-[; ;main.c: 166: }
-"166
+[; ;main.c: 165: }
+"165
 [e :UE 1649 ]
 }
-"168
+"167
 [v _WaitResponse `(v ~T0 @X0 1 ef1`*Cuc ]
 {
-[; ;main.c: 168: void WaitResponse(const char* chkString) {
+[; ;main.c: 167: void WaitResponse(const char* chkString) {
 [e :U _WaitResponse ]
 [v _chkString `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-"169
+"168
 [v _length `ui ~T0 @X0 1 a ]
-[; ;main.c: 169: size_t length = strlen(chkString);
+[; ;main.c: 168: size_t length = strlen(chkString);
 [e = _length ( _strlen (1 _chkString ]
-"170
+"169
 [v _i `ui ~T0 @X0 1 a ]
-[; ;main.c: 170: size_t i = 0;
+[; ;main.c: 169: size_t i = 0;
 [e = _i -> -> 0 `i `ui ]
-[; ;main.c: 172: while (i < length) {
-"172
+[; ;main.c: 171: while (i < length) {
+"171
 [e $U 1654  ]
 [e :U 1655 ]
 {
-[; ;main.c: 173: if (WiFly_ReadChar() == chkString[i]) {
-"173
+[; ;main.c: 172: if (WiFly_ReadChar() == chkString[i]) {
+"172
 [e $ ! == -> ( _WiFly_ReadChar ..  `i -> *U + _chkString * -> _i `ux -> -> # *U _chkString `ui `ux `i 1657  ]
 {
-[; ;main.c: 174: i++;
-"174
+[; ;main.c: 173: i++;
+"173
 [e ++ _i -> -> 1 `i `ui ]
-"175
+"174
 }
-[; ;main.c: 175: } else {
+[; ;main.c: 174: } else {
 [e $U 1658  ]
 [e :U 1657 ]
 {
-[; ;main.c: 176: i = 0;
-"176
+[; ;main.c: 175: i = 0;
+"175
 [e = _i -> -> 0 `i `ui ]
-"177
+"176
 }
 [e :U 1658 ]
-"178
+"177
 }
 [e :U 1654 ]
-"172
+"171
 [e $ < _i _length 1655  ]
 [e :U 1656 ]
+[; ;main.c: 176: }
 [; ;main.c: 177: }
-[; ;main.c: 178: }
-[; ;main.c: 180: }
-"180
+[; ;main.c: 179: }
+"179
 [e :UE 1653 ]
 }
-"182
+"181
 [v _get_response `(uc ~T0 @X0 1 ef ]
 {
-[; ;main.c: 182: uint8_t get_response() {
+[; ;main.c: 181: uint8_t get_response() {
 [e :U _get_response ]
 [f ]
-[; ;main.c: 183: while (1) {
-"183
+[; ;main.c: 182: while (1) {
+"182
 [e :U 1661 ]
 {
-[; ;main.c: 184: WaitResponse("Stat: ");
-"184
+[; ;main.c: 183: WaitResponse("Stat: ");
+"183
 [e ( _WaitResponse (1 :s 2C ]
-"185
+"184
 [v _status `uc ~T0 @X0 1 a ]
-[; ;main.c: 185: uint8_t status = WiFly_ReadChar();
+[; ;main.c: 184: uint8_t status = WiFly_ReadChar();
 [e = _status ( _WiFly_ReadChar ..  ]
-[; ;main.c: 186: if (status == 'Y') {
-"186
+[; ;main.c: 185: if (status == 'Y') {
+"185
 [e $ ! == -> _status `ui -> 89 `ui 1663  ]
 {
-[; ;main.c: 187: goto_mode(PAIRED);
+[; ;main.c: 186: goto_mode(PAIRED);
+"186
+[e ( _goto_mode (1 -> . `E15387 1 `uc ]
+[; ;main.c: 187: return SUCCESS;
 "187
-[e ( _goto_mode (1 -> . `E15395 1 `uc ]
-[; ;main.c: 188: return SUCCESS;
-"188
-[e ) -> . `E15401 0 `uc ]
+[e ) -> . `E15393 0 `uc ]
 [e $UE 1659  ]
-"189
+"188
 }
-[; ;main.c: 189: } else if (status == 'N') {
+[; ;main.c: 188: } else if (status == 'N') {
 [e $U 1664  ]
 [e :U 1663 ]
 [e $ ! == -> _status `ui -> 78 `ui 1665  ]
 {
-[; ;main.c: 190: return FAILED;
-"190
-[e ) -> . `E15401 1 `uc ]
+[; ;main.c: 189: return FAILED;
+"189
+[e ) -> . `E15393 1 `uc ]
 [e $UE 1659  ]
-"191
+"190
 }
-[; ;main.c: 191: } else if (status == 'E') {
+[; ;main.c: 190: } else if (status == 'E') {
 [e $U 1666  ]
 [e :U 1665 ]
 [e $ ! == -> _status `ui -> 69 `ui 1667  ]
 {
-[; ;main.c: 192: return TX_ERROR;
-"192
-[e ) -> . `E15401 2 `uc ]
+[; ;main.c: 191: return TX_ERROR;
+"191
+[e ) -> . `E15393 2 `uc ]
 [e $UE 1659  ]
-"193
+"192
 }
 [e :U 1667 ]
-"194
+"193
 [e :U 1666 ]
 [e :U 1664 ]
 }
 [e :U 1660 ]
-"183
+"182
 [e $U 1661  ]
 [e :U 1662 ]
+[; ;main.c: 192: }
 [; ;main.c: 193: }
-[; ;main.c: 194: }
-[; ;main.c: 195: return 0;
-"195
+[; ;main.c: 194: return 0;
+"194
 [e ) -> -> 0 `i `uc ]
 [e $UE 1659  ]
-[; ;main.c: 196: }
-"196
+[; ;main.c: 195: }
+"195
 [e :UE 1659 ]
 }
-"198
+"197
 [v _send_message `(v ~T0 @X0 1 ef1`*Cuc ]
 {
-[; ;main.c: 198: void send_message(const char * message) {
+[; ;main.c: 197: void send_message(const char * message) {
 [e :U _send_message ]
 [v _message `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 199: goto_mode(DISCONNECTED);
+[; ;main.c: 198: goto_mode(DISCONNECTED);
+"198
+[e ( _goto_mode (1 -> . `E15387 4 `uc ]
+[; ;main.c: 199: connect_socket("192.168.1.7", "1335");
 "199
-[e ( _goto_mode (1 -> . `E15395 4 `uc ]
-[; ;main.c: 200: connect_socket("192.168.1.7", "1335");
-"200
 [e ( _connect_socket (2 , :s 3C :s 4C ]
-[; ;main.c: 201: Clear_RX_Buffer();
-"201
+[; ;main.c: 200: Clear_RX_Buffer();
+"200
 [e ( _Clear_RX_Buffer ..  ]
-[; ;main.c: 202: WaitResponse("Proceed");
-"202
+[; ;main.c: 201: WaitResponse("Proceed");
+"201
 [e ( _WaitResponse (1 :s 5C ]
-[; ;main.c: 203: asm("clrwdt");
-"203
+[; ;main.c: 202: asm("clrwdt");
+"202
 [; <" clrwdt ;# ">
-[; ;main.c: 204: WiFly_SendString(message);
-"204
+[; ;main.c: 203: WiFly_SendString(message);
+"203
 [e ( _WiFly_SendString (1 _message ]
-[; ;main.c: 205: }
-"205
+[; ;main.c: 204: }
+"204
 [e :UE 1668 ]
 }
-"207
+"206
 [v _Pair `(uc ~T0 @X0 1 ef ]
 {
-[; ;main.c: 207: uint8_t Pair(void) {
+[; ;main.c: 206: uint8_t Pair(void) {
 [e :U _Pair ]
 [f ]
-"208
+"207
 [v _returnVal `uc ~T0 @X0 1 a ]
-[v F15440 `uc ~T0 @X0 -> 0 `x s ]
-[i F15440
+[v F15432 `uc ~T0 @X0 -> 0 `x s ]
+[i F15432
 :U ..
 -> 112 `c
 -> 97 `c
@@ -14688,71 +14699,71 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"209
+"208
 [v _pairString `uc ~T0 @X0 9  a ]
-[; ;main.c: 208: uint8_t returnVal;
-[; ;main.c: 209: char pairString[] = "pair 123";
-[e = _pairString F15440 ]
-[; ;main.c: 210: sprintf(pairString, "pair %03d", UID);
-"210
+[; ;main.c: 207: uint8_t returnVal;
+[; ;main.c: 208: char pairString[] = "pair 123";
+[e = _pairString F15432 ]
+[; ;main.c: 209: sprintf(pairString, "pair %03d", UID);
+"209
 [e ( _sprintf (1 , (. , &U _pairString :s 6C -> _UID `i ]
-[; ;main.c: 211: send_message(pairString);
-"211
+[; ;main.c: 210: send_message(pairString);
+"210
 [e ( _send_message (1 -> &U _pairString `*Cuc ]
-[; ;main.c: 212: goto_mode(PAIRING);
+[; ;main.c: 211: goto_mode(PAIRING);
+"211
+[e ( _goto_mode (1 -> . `E15387 3 `uc ]
+[; ;main.c: 212: returnVal = get_response();
 "212
-[e ( _goto_mode (1 -> . `E15395 3 `uc ]
-[; ;main.c: 213: returnVal = get_response();
-"213
 [e = _returnVal ( _get_response ..  ]
-[; ;main.c: 214: if (returnVal == SUCCESS) {
-"214
-[e $ ! == -> _returnVal `i -> . `E15401 0 `i 1670  ]
+[; ;main.c: 213: if (returnVal == SUCCESS) {
+"213
+[e $ ! == -> _returnVal `i -> . `E15393 0 `i 1670  ]
 {
-[; ;main.c: 215: UID = WiFly_ReadChar();
-"215
+[; ;main.c: 214: UID = WiFly_ReadChar();
+"214
 [e = _UID ( _WiFly_ReadChar ..  ]
-[; ;main.c: 216: eeprom_write(1, UID);
-"216
+[; ;main.c: 215: eeprom_write(1, UID);
+"215
 [e ( _eeprom_write (2 , -> -> 1 `i `uc _UID ]
-[; ;main.c: 217: goto_mode(PAIRED);
+[; ;main.c: 216: goto_mode(PAIRED);
+"216
+[e ( _goto_mode (1 -> . `E15387 1 `uc ]
 "217
-[e ( _goto_mode (1 -> . `E15395 1 `uc ]
-"218
 }
-[; ;main.c: 218: } else {
+[; ;main.c: 217: } else {
 [e $U 1671  ]
 [e :U 1670 ]
 {
-[; ;main.c: 219: goto_mode(UNPAIRED);
+[; ;main.c: 218: goto_mode(UNPAIRED);
+"218
+[e ( _goto_mode (1 -> . `E15387 2 `uc ]
 "219
-[e ( _goto_mode (1 -> . `E15395 2 `uc ]
-"220
 }
 [e :U 1671 ]
-[; ;main.c: 220: }
-[; ;main.c: 221: return returnVal;
-"221
+[; ;main.c: 219: }
+[; ;main.c: 220: return returnVal;
+"220
 [e ) _returnVal ]
 [e $UE 1669  ]
-[; ;main.c: 222: }
-"222
+[; ;main.c: 221: }
+"221
 [e :UE 1669 ]
 }
-"224
+"223
 [v _Validate `(uc ~T0 @X0 1 ef ]
 {
-[; ;main.c: 224: uint8_t Validate() {
+[; ;main.c: 223: uint8_t Validate() {
 [e :U _Validate ]
 [f ]
-"225
+"224
 [v _returnVal `uc ~T0 @X0 1 a ]
-[; ;main.c: 225: uint8_t returnVal;
-[; ;main.c: 226: pingTime = 0;
-"226
+[; ;main.c: 224: uint8_t returnVal;
+[; ;main.c: 225: pingTime = 0;
+"225
 [e = _pingTime -> -> 0 `i `uc ]
-[v F15444 `uc ~T0 @X0 -> 0 `x s ]
-[i F15444
+[v F15436 `uc ~T0 @X0 -> 0 `x s ]
+[i F15436
 :U ..
 -> 118 `c
 -> 97 `c
@@ -14769,78 +14780,78 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"227
+"226
 [v _valString `uc ~T0 @X0 13  a ]
-[; ;main.c: 227: char valString[] = "validate 123";
-[e = _valString F15444 ]
-[; ;main.c: 228: sprintf(valString, "validate %03d", UID);
-"228
+[; ;main.c: 226: char valString[] = "validate 123";
+[e = _valString F15436 ]
+[; ;main.c: 227: sprintf(valString, "validate %03d", UID);
+"227
 [e ( _sprintf (1 , (. , &U _valString :s 7C -> _UID `i ]
-[; ;main.c: 229: do {
-"229
+[; ;main.c: 228: do {
+"228
 [e :U 1675 ]
 {
-[; ;main.c: 230: send_message(valString);
-"230
+[; ;main.c: 229: send_message(valString);
+"229
 [e ( _send_message (1 -> &U _valString `*Cuc ]
-[; ;main.c: 231: returnVal = get_response();
-"231
+[; ;main.c: 230: returnVal = get_response();
+"230
 [e = _returnVal ( _get_response ..  ]
-[; ;main.c: 232: if (returnVal == SUCCESS) {
-"232
-[e $ ! == -> _returnVal `i -> . `E15401 0 `i 1676  ]
+[; ;main.c: 231: if (returnVal == SUCCESS) {
+"231
+[e $ ! == -> _returnVal `i -> . `E15393 0 `i 1676  ]
 {
-[; ;main.c: 233: goto_mode(PAIRED);
+[; ;main.c: 232: goto_mode(PAIRED);
+"232
+[e ( _goto_mode (1 -> . `E15387 1 `uc ]
 "233
-[e ( _goto_mode (1 -> . `E15395 1 `uc ]
-"234
 }
-[; ;main.c: 234: } else if (returnVal == FAILED) {
+[; ;main.c: 233: } else if (returnVal == FAILED) {
 [e $U 1677  ]
 [e :U 1676 ]
-[e $ ! == -> _returnVal `i -> . `E15401 1 `i 1678  ]
+[e $ ! == -> _returnVal `i -> . `E15393 1 `i 1678  ]
 {
-[; ;main.c: 235: goto_mode(UNPAIRED);
+[; ;main.c: 234: goto_mode(UNPAIRED);
+"234
+[e ( _goto_mode (1 -> . `E15387 2 `uc ]
 "235
-[e ( _goto_mode (1 -> . `E15395 2 `uc ]
-"236
 }
 [e :U 1678 ]
-"237
+"236
 [e :U 1677 ]
 }
-[; ;main.c: 236: }
-[; ;main.c: 237: } while (returnVal == TX_ERROR);
-[e $ == -> _returnVal `i -> . `E15401 2 `i 1675  ]
+[; ;main.c: 235: }
+[; ;main.c: 236: } while (returnVal == TX_ERROR);
+[e $ == -> _returnVal `i -> . `E15393 2 `i 1675  ]
 [e :U 1674 ]
-[; ;main.c: 238: TMR4_StartTimer();
-"238
+[; ;main.c: 237: TMR4_StartTimer();
+"237
 [e ( _TMR4_StartTimer ..  ]
-[; ;main.c: 239: return returnVal;
-"239
+[; ;main.c: 238: return returnVal;
+"238
 [e ) _returnVal ]
 [e $UE 1672  ]
-[; ;main.c: 240: }
-"240
+[; ;main.c: 239: }
+"239
 [e :UE 1672 ]
 }
-"242
+"241
 [v _Knock `(uc ~T0 @X0 1 ef ]
 {
-[; ;main.c: 242: uint8_t Knock() {
+[; ;main.c: 241: uint8_t Knock() {
 [e :U _Knock ]
 [f ]
-[; ;main.c: 243: RELAY_RL1_Engage();
-"243
+[; ;main.c: 242: RELAY_RL1_Engage();
+"242
 [e ( _RELAY_RL1_Engage ..  ]
-"244
+"243
 [v _returnVal `uc ~T0 @X0 1 a ]
-[; ;main.c: 244: uint8_t returnVal;
-[; ;main.c: 245: TMR4_StopTimer();
-"245
+[; ;main.c: 243: uint8_t returnVal;
+[; ;main.c: 244: TMR4_StopTimer();
+"244
 [e ( _TMR4_StopTimer ..  ]
-[v F15448 `uc ~T0 @X0 -> 0 `x s ]
-[i F15448
+[v F15440 `uc ~T0 @X0 -> 0 `x s ]
+[i F15440
 :U ..
 -> 107 `c
 -> 110 `c
@@ -14854,267 +14865,301 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"246
+"245
 [v _knockString `uc ~T0 @X0 10  a ]
-[; ;main.c: 246: char knockString[] = "knock 123";
-[e = _knockString F15448 ]
-[; ;main.c: 247: sprintf(knockString, "knock %03d", UID);
-"247
+[; ;main.c: 245: char knockString[] = "knock 123";
+[e = _knockString F15440 ]
+[; ;main.c: 246: sprintf(knockString, "knock %03d", UID);
+"246
 [e ( _sprintf (1 , (. , &U _knockString :s 8C -> _UID `i ]
-[; ;main.c: 248: do {
-"248
+[; ;main.c: 247: do {
+"247
 [e :U 1682 ]
 {
-[; ;main.c: 249: send_message(knockString);
-"249
+[; ;main.c: 248: send_message(knockString);
+"248
 [e ( _send_message (1 -> &U _knockString `*Cuc ]
-[; ;main.c: 250: returnVal = get_response();
-"250
+[; ;main.c: 249: returnVal = get_response();
+"249
 [e = _returnVal ( _get_response ..  ]
-[; ;main.c: 251: if (returnVal == SUCCESS) {
-"251
-[e $ ! == -> _returnVal `i -> . `E15401 0 `i 1683  ]
+[; ;main.c: 250: if (returnVal == SUCCESS) {
+"250
+[e $ ! == -> _returnVal `i -> . `E15393 0 `i 1683  ]
 {
-[; ;main.c: 252: goto_mode(PAIRED);
+[; ;main.c: 251: goto_mode(PAIRED);
+"251
+[e ( _goto_mode (1 -> . `E15387 1 `uc ]
 "252
-[e ( _goto_mode (1 -> . `E15395 1 `uc ]
-"253
 }
-[; ;main.c: 253: } else {
+[; ;main.c: 252: } else {
 [e $U 1684  ]
 [e :U 1683 ]
 {
-[; ;main.c: 254: goto_mode(UNPAIRED);
+[; ;main.c: 253: goto_mode(UNPAIRED);
+"253
+[e ( _goto_mode (1 -> . `E15387 2 `uc ]
 "254
-[e ( _goto_mode (1 -> . `E15395 2 `uc ]
-"255
 }
 [e :U 1684 ]
-"256
+"255
 }
-[; ;main.c: 255: }
-[; ;main.c: 256: } while ((returnVal == TX_ERROR));
-[e $ == -> _returnVal `i -> . `E15401 2 `i 1682  ]
+[; ;main.c: 254: }
+[; ;main.c: 255: } while ((returnVal == TX_ERROR));
+[e $ == -> _returnVal `i -> . `E15393 2 `i 1682  ]
 [e :U 1681 ]
-[; ;main.c: 257: WDTCON0bits.SWDTEN = 0;
-"257
+[; ;main.c: 256: WDTCON0bits.SWDTEN = 0;
+"256
 [e = . . _WDTCON0bits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 258: _delay((unsigned long)((1000)*(32000000/4000.0)));
-"258
+[; ;main.c: 257: _delay((unsigned long)((1000)*(32000000/4000.0)));
+"257
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 259: RELAY_RL1_Disengage();
-"259
+[; ;main.c: 258: RELAY_RL1_Disengage();
+"258
 [e ( _RELAY_RL1_Disengage ..  ]
-[; ;main.c: 260: WDTCON0bits.SWDTEN = 1;
-"260
+[; ;main.c: 259: WDTCON0bits.SWDTEN = 1;
+"259
 [e = . . _WDTCON0bits 1 0 -> -> 1 `i `uc ]
-[; ;main.c: 261: return returnVal;
-"261
+[; ;main.c: 260: return returnVal;
+"260
 [e ) _returnVal ]
 [e $UE 1679  ]
-[; ;main.c: 262: }
-"262
+[; ;main.c: 261: }
+"261
 [e :UE 1679 ]
 }
-"264
+"263
 [v _connect_network `(v ~T0 @X0 1 ef2`*Cuc`*Cuc ]
 {
-[; ;main.c: 264: void connect_network(const char * ssid, const char * passwd) {
+[; ;main.c: 263: void connect_network(const char * ssid, const char * passwd) {
 [e :U _connect_network ]
 [v _ssid `*Cuc ~T0 @X0 1 r1 ]
 [v _passwd `*Cuc ~T0 @X0 1 r2 ]
 [f ]
-[; ;main.c: 266: WiFly_Example_InitializeAsClient(ssid, passwd);
+[; ;main.c: 265: do { LATDbits.LATD3 = 1; } while(0);
+"265
+[e :U 1688 ]
+{
+[e = . . _LATDbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 1687 ]
+[; ;main.c: 266: WiFly_FactoryReset();
 "266
-[e ( _WiFly_Example_InitializeAsClient (2 , _ssid _passwd ]
-[; ;main.c: 267: }
-"267
+[e ( _WiFly_FactoryReset ..  ]
+[; ;main.c: 268: WiFly_SendCMD("set ip dhcp 1\r\n");
+"268
+[e ( _WiFly_SendCMD (1 :s 9C ]
+[; ;main.c: 269: WiFly_SendCMD_SingleArg("set wlan passphrase %s\r\n", passwd);
+"269
+[e ( _WiFly_SendCMD_SingleArg (2 , :s 10C _passwd ]
+[; ;main.c: 270: WiFly_SendCMD_SingleArg("set wlan ssid %s\r\n", ssid);
+"270
+[e ( _WiFly_SendCMD_SingleArg (2 , :s 11C _ssid ]
+[; ;main.c: 271: WiFly_SendCMD("set wlan join 1\r\n");
+"271
+[e ( _WiFly_SendCMD (1 :s 12C ]
+[; ;main.c: 272: WiFly_SendString("set ip protocol 08\r\n");
+"272
+[e ( _WiFly_SendString (1 :s 13C ]
+[; ;main.c: 273: WiFly_SaveConfig();
+"273
+[e ( _WiFly_SaveConfig ..  ]
+[; ;main.c: 274: WiFly_CheckRecv("IF=UP");
+"274
+[e ( _WiFly_CheckRecv (1 :s 14C ]
+[; ;main.c: 275: }
+"275
 [e :UE 1685 ]
 }
-"269
+"277
 [v _blink `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 269: void blink() {
+[; ;main.c: 277: void blink() {
 [e :U _blink ]
 [f ]
-[; ;main.c: 270: SetIndication(!indStatus);
-"270
+[; ;main.c: 278: SetIndication(!indStatus);
+"278
 [e ( _SetIndication (1 -> -> ! != -> _indStatus `i -> -> -> 0 `i `uc `i `i `uc ]
-[; ;main.c: 271: }
-"271
-[e :UE 1686 ]
+[; ;main.c: 279: }
+"279
+[e :UE 1689 ]
 }
-"273
+"281
 [v _setFlag `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 273: void setFlag() {
+[; ;main.c: 281: void setFlag() {
 [e :U _setFlag ]
 [f ]
-[; ;main.c: 274: TMR4_StopTimer();
-"274
+[; ;main.c: 282: TMR4_StopTimer();
+"282
 [e ( _TMR4_StopTimer ..  ]
-[; ;main.c: 275: pingTime = 1;
-"275
+[; ;main.c: 283: pingTime = 1;
+"283
 [e = _pingTime -> -> 1 `i `uc ]
-[; ;main.c: 276: }
-"276
-[e :UE 1687 ]
+[; ;main.c: 284: }
+"284
+[e :UE 1690 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"278
+"286
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 278: void main(void) {
+[; ;main.c: 286: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 279: WDTCON0bits.SWDTEN = 0;
-"279
+[; ;main.c: 287: WDTCON0bits.SWDTEN = 0;
+"287
 [e = . . _WDTCON0bits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 281: SYSTEM_Initialize();
-"281
+[; ;main.c: 289: SYSTEM_Initialize();
+"289
 [e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 283: TMR2_SetInterruptHandler(blink);
-"283
+[; ;main.c: 291: TMR2_SetInterruptHandler(blink);
+"291
 [e ( _TMR2_SetInterruptHandler (1 &U _blink ]
-[; ;main.c: 284: TMR4_SetInterruptHandler(setFlag);
-"284
+[; ;main.c: 292: TMR4_SetInterruptHandler(setFlag);
+"292
 [e ( _TMR4_SetInterruptHandler (1 &U _setFlag ]
-[; ;main.c: 290: (INTCONbits.GIE = 1);
-"290
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 293: (INTCONbits.PEIE = 1);
-"293
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 295: T2PR = 10;
-"295
-[e = _T2PR -> -> 10 `i `uc ]
-[; ;main.c: 297: TMR2_StartTimer();
-"297
-[e ( _TMR2_StartTimer ..  ]
-[; ;main.c: 298: TMR4_StopTimer();
+[; ;main.c: 298: (INTCONbits.GIE = 1);
 "298
-[e ( _TMR4_StopTimer ..  ]
-[; ;main.c: 300: UID = eeprom_read(1);
-"300
-[e = _UID ( _eeprom_read (1 -> -> 1 `i `uc ]
-[; ;main.c: 302: WiFly_FactoryReset();
-"302
-[e ( _WiFly_FactoryReset ..  ]
-[; ;main.c: 304: connect_network("C4-2-543_WLAN", "H@cker101");
-"304
-[e ( _connect_network (2 , :s 9C :s 10C ]
-[; ;main.c: 306: if (UID == 0xFF) {
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 301: (INTCONbits.PEIE = 1);
+"301
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 303: T2PR = 10;
+"303
+[e = _T2PR -> -> 10 `i `uc ]
+[; ;main.c: 305: TMR2_StartTimer();
+"305
+[e ( _TMR2_StartTimer ..  ]
+[; ;main.c: 306: TMR4_StopTimer();
 "306
-[e $ ! == -> _UID `i -> 255 `i 1689  ]
-{
-[; ;main.c: 307: mode = UNPAIRED;
-"307
-[e = _mode -> . `E15395 2 `uc ]
-[; ;main.c: 308: Pair();
+[e ( _TMR4_StopTimer ..  ]
+[; ;main.c: 308: UID = eeprom_read(1);
 "308
-[e ( _Pair ..  ]
-"309
-}
-[; ;main.c: 309: } else {
-[e $U 1690  ]
-[e :U 1689 ]
-{
-[; ;main.c: 310: Validate();
+[e = _UID ( _eeprom_read (1 -> -> 1 `i `uc ]
+[; ;main.c: 310: WiFly_FactoryReset();
 "310
-[e ( _Validate ..  ]
-"311
-}
-[e :U 1690 ]
-[; ;main.c: 311: }
-[; ;main.c: 313: WDTCON0bits.SWDTEN = 1;
-"313
-[e = . . _WDTCON0bits 1 0 -> -> 1 `i `uc ]
-[; ;main.c: 315: while (1) {
+[e ( _WiFly_FactoryReset ..  ]
+[; ;main.c: 312: connect_network("C4-2-543_WLAN", "H@cker101");
+"312
+[e ( _connect_network (2 , :s 15C :s 16C ]
+[; ;main.c: 314: if (UID == 0xFF) {
+"314
+[e $ ! == -> _UID `i -> 255 `i 1692  ]
+{
+[; ;main.c: 315: mode = UNPAIRED;
 "315
+[e = _mode -> . `E15387 2 `uc ]
+[; ;main.c: 316: Pair();
+"316
+[e ( _Pair ..  ]
+"317
+}
+[; ;main.c: 317: } else {
+[e $U 1693  ]
 [e :U 1692 ]
 {
-[; ;main.c: 316: asm("clrwdt");
-"316
-[; <" clrwdt ;# ">
-[; ;main.c: 317: switch (mode) {
-"317
-[e $U 1695  ]
-{
-[; ;main.c: 318: case UNPAIRED:
+[; ;main.c: 318: Validate();
 "318
-[e :U 1696 ]
-[; ;main.c: 319: if (PORTCbits.RC5 == 0) {
-"319
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 1697  ]
-{
-[; ;main.c: 320: Pair();
-"320
-[e ( _Pair ..  ]
-"321
-}
-[e :U 1697 ]
-[; ;main.c: 321: }
-[; ;main.c: 322: break;
-"322
-[e $U 1694  ]
-[; ;main.c: 323: case PAIRED:
-"323
-[e :U 1698 ]
-[; ;main.c: 324: if (pingTime) {
-"324
-[e $ ! != -> _pingTime `i -> -> -> 0 `i `uc `i 1699  ]
-{
-[; ;main.c: 325: Validate();
-"325
 [e ( _Validate ..  ]
-"326
+"319
 }
-[e :U 1699 ]
-[; ;main.c: 326: }
-[; ;main.c: 327: if (PORTBbits.RB4 == 0) {
-"327
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 1700  ]
+[e :U 1693 ]
+[; ;main.c: 319: }
+[; ;main.c: 321: WDTCON0bits.SWDTEN = 1;
+"321
+[e = . . _WDTCON0bits 1 0 -> -> 1 `i `uc ]
+[; ;main.c: 323: while (1) {
+"323
+[e :U 1695 ]
 {
-[; ;main.c: 328: Knock();
+[; ;main.c: 324: asm("clrwdt");
+"324
+[; <" clrwdt ;# ">
+[; ;main.c: 325: switch (mode) {
+"325
+[e $U 1698  ]
+{
+[; ;main.c: 326: case UNPAIRED:
+"326
+[e :U 1699 ]
+[; ;main.c: 327: if (PORTCbits.RC5 == 0) {
+"327
+[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 1700  ]
+{
+[; ;main.c: 328: Pair();
 "328
-[e ( _Knock ..  ]
+[e ( _Pair ..  ]
 "329
 }
 [e :U 1700 ]
 [; ;main.c: 329: }
 [; ;main.c: 330: break;
 "330
-[e $U 1694  ]
+[e $U 1697  ]
+[; ;main.c: 331: case PAIRED:
 "331
-}
-[; ;main.c: 331: }
-[e $U 1694  ]
-"317
-[e :U 1695 ]
-[e [\ _mode , $ -> . `E15395 2 `uc 1696
- , $ -> . `E15395 1 `uc 1698
- 1694 ]
-"331
-[e :U 1694 ]
+[e :U 1701 ]
+[; ;main.c: 332: if (pingTime) {
 "332
-}
-[e :U 1691 ]
-"315
-[e $U 1692  ]
-[e :U 1693 ]
-[; ;main.c: 332: }
-[; ;main.c: 333: }
+[e $ ! != -> _pingTime `i -> -> -> 0 `i `uc `i 1702  ]
+{
+[; ;main.c: 333: Validate();
 "333
-[e :UE 1688 ]
+[e ( _Validate ..  ]
+"334
+}
+[e :U 1702 ]
+[; ;main.c: 334: }
+[; ;main.c: 335: if (PORTBbits.RB4 == 0) {
+"335
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 1703  ]
+{
+[; ;main.c: 336: Knock();
+"336
+[e ( _Knock ..  ]
+"337
+}
+[e :U 1703 ]
+[; ;main.c: 337: }
+[; ;main.c: 338: break;
+"338
+[e $U 1697  ]
+"339
+}
+[; ;main.c: 339: }
+[e $U 1697  ]
+"325
+[e :U 1698 ]
+[e [\ _mode , $ -> . `E15387 2 `uc 1699
+ , $ -> . `E15387 1 `uc 1701
+ 1697 ]
+"339
+[e :U 1697 ]
+"340
+}
+[e :U 1694 ]
+"323
+[e $U 1695  ]
+[e :U 1696 ]
+[; ;main.c: 340: }
+[; ;main.c: 341: }
+"341
+[e :UE 1691 ]
 }
 [p f _sprintf 8421508 ]
 [a 5C 80 114 111 99 101 101 100 0 ]
 [a 6C 112 97 105 114 32 37 48 51 100 0 ]
 [a 8C 107 110 111 99 107 32 37 48 51 100 0 ]
 [a 7C 118 97 108 105 100 97 116 101 32 37 48 51 100 0 ]
-[a 9C 67 52 45 50 45 53 52 51 95 87 76 65 78 0 ]
+[a 14C 73 70 61 85 80 0 ]
+[a 15C 67 52 45 50 45 53 52 51 95 87 76 65 78 0 ]
 [a 3C 49 57 50 46 49 54 56 46 49 46 55 0 ]
 [a 4C 49 51 51 53 0 ]
-[a 10C 72 64 99 107 101 114 49 48 49 0 ]
+[a 16C 72 64 99 107 101 114 49 48 49 0 ]
 [a 2C 83 116 97 116 58 32 0 ]
 [a 1C 111 112 101 110 32 37 115 32 37 115 13 10 0 ]
+[a 10C 115 101 116 32 119 108 97 110 32 112 97 115 115 112 104 114 97 115 101 32 37 115 13 10 0 ]
+[a 11C 115 101 116 32 119 108 97 110 32 115 115 105 100 32 37 115 13 10 0 ]
+[a 13C 115 101 116 32 105 112 32 112 114 111 116 111 99 111 108 32 48 56 13 10 0 ]
+[a 9C 115 101 116 32 105 112 32 100 104 99 112 32 49 13 10 0 ]
+[a 12C 115 101 116 32 119 108 97 110 32 106 111 105 110 32 49 13 10 0 ]

@@ -45,7 +45,6 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "mcc_generated_files/WiFly.h"
-#include "mcc_generated_files/EXAMPLE_WiFly.h"
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>
@@ -263,7 +262,16 @@ uint8_t Knock() {
 
 void connect_network(const char * ssid, const char * passwd) {
 
-    WiFly_Example_InitializeAsClient(ssid, passwd);
+    WiFly_Wake_SetHigh();
+    WiFly_FactoryReset();
+    
+    WiFly_SendCMD("set ip dhcp 1\r\n");
+    WiFly_SendCMD_SingleArg("set wlan passphrase %s\r\n", passwd);
+    WiFly_SendCMD_SingleArg("set wlan ssid %s\r\n", ssid);
+    WiFly_SendCMD("set wlan join 1\r\n");
+    WiFly_SendString("set ip protocol 08\r\n");
+    WiFly_SaveConfig();
+    WiFly_CheckRecv("IF=UP");
 }
 
 void blink() {

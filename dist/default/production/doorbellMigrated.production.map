@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.42\dat\en_msgs.txt -cs \
   -h+dist/default/production\doorbellMigrated.production.sym \
   --cmf=dist/default/production\doorbellMigrated.production.cmf -z \
-  -Q16F18875 -oC:\Users\C17239\AppData\Local\Temp\s874.2 \
+  -Q16F18875 -oC:\Users\C17239\AppData\Local\Temp\scm0.2 \
   -Mdist/default/production/doorbellMigrated.production.map -E1 -ver=XC8 \
   -ASTACK=020ADh-023efh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -32,7 +32,7 @@ Linker command line:
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\C17239\AppData\Local\Temp\s874.obj \
+  C:\Users\C17239\AppData\Local\Temp\scm0.obj \
   dist/default/production\doorbellMigrated.production.obj 
 
 Object code version is 3.11
@@ -42,28 +42,28 @@ Machine type is 16F18875
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\C17239\AppData\Local\Temp\s874.obj
+C:\Users\C17239\AppData\Local\Temp\scm0.obj
                 end_init                             34       34        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5    1000E       0
 dist/default/production\doorbellMigrated.production.obj
-                cinit                               820      820      7E0     1040       0
+                cinit                               826      826      7DA     104C       0
                 intentry                              4        4       30        8       0
-                text71                               D1       D1       16        8       0
-                text70                               A2       A2       18        8       0
-                text67                              123      123        1        8       0
-                text66                              100      100        C        8       0
-                text63                              10C      10C        A        8       0
-                text62                              122      122        1        8       0
-                text61                               F4       F4        C        8       0
-                text57                               BA       BA       17        8       0
-                text39                               86       86       1C        8       0
-                text18                               36       36       32        8       0
+                text70                               CF       CF       16        8       0
+                text69                               A0       A0       18        8       0
+                text67                               36       36       30        8       0
+                text66                              121      121        1        8       0
+                text65                               FE       FE        C        8       0
+                text62                              10A      10A        A        8       0
+                text61                              120      120        1        8       0
+                text60                               F2       F2        C        8       0
+                text56                               B8       B8       17        8       0
+                text38                               84       84       1C        8       0
                 cstackBANK0                          20       20       4E       20       1
                 cstackCOMMON                         70       70        C       70       1
                 cstackBANK1                          D3       D3        E       A0       1
-                clrtext                             11C      11C        6        8       0
-                inittext                            116      116        6        8       0
+                clrtext                             11A      11A        6        8       0
+                inittext                            114      114        6        8       0
                 dataBANK2                           120      120        D      120       1
                 dataBANK1                            A0       A0       1E       A0       1
                 bssBANK1                             BE       BE       15       A0       1
@@ -108,31 +108,31 @@ dist/default/production\doorbellMigrated.production.obj
                 stringtext3                        12AE     12AE        8     2000       0
                 stringtext2                        127E     127E        A     2000       0
                 stringtext1                        11C6     11C6       14     2000       0
-                idataBANK2                           E7       E7        D        8       0
-                idataBANK1                           68       68       1E        8       0
+                idataBANK2                           E5       E5        D        8       0
+                idataBANK1                           66       66       1E        8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                             34       34        2         0
-                cinit                               820      820      7E0         0
+                cinit                               826      826      7DA         0
                 intentry                              4        4       30         0
                 reset_vec                             0        0        2         0
-                text71                               D1       D1       16         0
-                text70                               A2       A2       18         0
-                text67                              123      123        1         0
-                text66                              100      100        C         0
-                text63                              10C      10C        A         0
-                text62                              122      122        1         0
-                text61                               F4       F4        C         0
-                text57                               BA       BA       17         0
-                text39                               86       86       1C         0
-                text18                               36       36       32         0
-                clrtext                             11C      11C        6         0
-                inittext                            116      116        6         0
-                idataBANK2                           E7       E7        D         0
-                idataBANK1                           68       68       1E         0
+                text70                               CF       CF       16         0
+                text69                               A0       A0       18         0
+                text67                               36       36       30         0
+                text66                              121      121        1         0
+                text65                               FE       FE        C         0
+                text62                              10A      10A        A         0
+                text61                              120      120        1         0
+                text60                               F2       F2        C         0
+                text56                               B8       B8       17         0
+                text38                               84       84       1C         0
+                clrtext                             11A      11A        6         0
+                inittext                            114      114        6         0
+                idataBANK2                           E5       E5        D         0
+                idataBANK1                           66       66       1E         0
 
         CLASS   STRCODE        
                 stringtext38                       1310     1310        4         0
@@ -338,12 +338,12 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  000120  000124         8       0  CODE        2
+                intentry                       000004  00011E  000122         8       0  CODE        2
                 cstackBANK0                    000020  000050  000070        20       1  BANK0       1
                 cstackCOMMON                   000070  00000D  00007D        70       1  COMMON      1
                 dataBANK1                      0000A0  00004C  0000EC        A0       1  BANK1       1
                 dataBANK2                      000120  00000D  00012D       120       1  BANK2       1
-                cinit                          000820  0007E0  001000      1040       0  CODE        2
+                cinit                          000826  0007DA  001000      104C       0  CODE        2
                 stringtext10                   001000  000314  001314      2000       0  STRCODE     2
                 config                         008007  000005  00800C     1000E       0  CONFIG      2
 
@@ -365,15 +365,15 @@ UNUSED ADDRESS RANGES
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-023EF             3F0           1
         CODE             00002-00003               2           2
-                         00124-0081F             6DC
+                         00122-00825             6DE
                          01314-01FFF             4EC
         COMMON           0007D-0007D               1           1
         CONST            00002-00003               2           2
-                         00124-0081F             100
+                         00122-00825             100
                          01314-01FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         00124-0081F             100
+                         00122-00825             100
                          01314-01FFF             100
         IDLOC            08000-08003               4           2
         RAM              000EC-000EF               4           1
@@ -422,927 +422,921 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STACK            020AD-023EF             343           1
         STRCODE          00002-00003               2           2
-                         00124-0081F             6FC
+                         00122-00825             704
                          01314-01FFF             CEC
         STRING           00002-00003               2           2
-                         00124-0081F             100
+                         00122-00825             100
                          01314-01FFF             100
 
                                   Symbol Table
 
-?___lwdiv                                  cstackCOMMON 00071
-?___lwmod                                  cstackCOMMON 00078
-?___wmul                                   cstackCOMMON 00071
-?_sprintf                                  cstackBANK0  00021
-?_strlen                                   cstackCOMMON 00071
-CheckResponse@chkString1                   cstackCOMMON 00076
-CheckResponse@chkString2                   cstackCOMMON 00078
-CheckResponse@chkString3                   cstackCOMMON 00079
-CheckResponse@i1                           cstackBANK0  00029
-CheckResponse@i2                           cstackBANK0  0002B
-CheckResponse@i3                           cstackBANK0  00026
-CheckResponse@input                        cstackBANK0  00028
-CheckResponse@length1                      cstackBANK0  00022
-CheckResponse@length2                      cstackBANK0  00024
-CheckResponse@length3                      cstackBANK0  00020
-EUSART_Read@readValue                      cstackCOMMON 00071
-EUSART_SetRxInterruptHandler@handler       cstackCOMMON 00071
-EUSART_SetTxInterruptHandler@handler       cstackCOMMON 00071
-EUSART_Write@txData                        cstackCOMMON 00071
-Knock@F15448                               dataBANK1    000A0
-Knock@knockString                          cstackBANK1  000D5
-Knock@returnVal                            cstackBANK1  000DF
-PIN_MANAGER_Initialize@state               cstackCOMMON 00071
-PL10                                       cinit        00F83
-PL12                                       cinit        00F8F
-PL14                                       cinit        00F95
-PL16                                       cinit        00F9F
-PL18                                       cinit        00FA6
-PL2                                        cinit        00F4F
-PL20                                       cinit        00FAE
-PL22                                       cinit        00FB4
-PL24                                       cinit        00FFA
-PL26                                       cinit        00FBA
-PL28                                       cinit        00FC0
-PL30                                       cinit        00FC6
-PL32                                       cinit        00FCB
-PL4                                        cinit        00F5E
-PL6                                        cinit        00F6B
-PL8                                        cinit        00F77
-Pair@F15440                                dataBANK1    000AA
-Pair@pairString                            cstackBANK1  000D3
-Pair@returnVal                             cstackBANK1  000DC
-SetIndication@set                          cstackCOMMON 00071
-TMR2_SetInterruptHandler@InterruptHandler  cstackCOMMON 00071
-TMR4_SetInterruptHandler@InterruptHandler  cstackCOMMON 00071
-Validate@F15444                            dataBANK2    00120
-Validate@returnVal                         cstackBANK1  000E0
-Validate@valString                         cstackBANK1  000D3
-WaitResponse@chkString                     cstackCOMMON 00076
-WaitResponse@i                             cstackBANK0  00022
-WaitResponse@length                        cstackBANK0  00020
-WiFly_CheckRecv@chkString                  cstackCOMMON 00076
-WiFly_CheckRecv@i                          cstackBANK0  00022
-WiFly_CheckRecv@length                     cstackBANK0  00020
-WiFly_Example_InitializeAsClient@password  cstackBANK0  00068
-WiFly_Example_InitializeAsClient@ssid      cstackBANK0  00066
-WiFly_Send@command                         cstackCOMMON 00072
-WiFly_SendCMD@cmd                          cstackBANK0  00024
-WiFly_SendCMD_DoubleArg@arg1               cstackBANK0  0003C
-WiFly_SendCMD_DoubleArg@arg2               cstackBANK0  0003E
-WiFly_SendCMD_DoubleArg@cmdFormat          cstackBANK0  0003A
-WiFly_SendCMD_DoubleArg@txBuffer           cstackBANK0  00040
-WiFly_SendCMD_SingleArg@arg                cstackBANK0  0003C
-WiFly_SendCMD_SingleArg@cmdFormat          cstackBANK0  0003A
-WiFly_SendCMD_SingleArg@txBuffer           cstackBANK0  0003E
-WiFly_SendString@sendString                cstackCOMMON 00075
-_ANSELA                                    (abs)        00F38
-_ANSELB                                    (abs)        00F43
-_ANSELC                                    (abs)        00F4E
-_ANSELD                                    (abs)        00F59
-_ANSELE                                    (abs)        00F64
-_BAUD1CON                                  (abs)        0011F
-_CheckResponse                             cinit        00AE8
-_ClearIndicators                           cinit        00F2B
-_Clear_RX_Buffer                           cinit        00ADD
-_EUSART_Initialize                         text18       00036
-_EUSART_Read                               text57       000BA
-_EUSART_Receive_ISR                        text71       000D1
-_EUSART_RxDefaultInterruptHandler          nvBANK1      000E3
-_EUSART_SetRxInterruptHandler              text18       00063
-_EUSART_SetTxInterruptHandler              text18       0005D
-_EUSART_Transmit_ISR                       text70       000A2
-_EUSART_TxDefaultInterruptHandler          nvBANK1      000E5
-_EUSART_Write                              text39       00086
-_EUSART_is_rx_ready                        cinit        00AB6
-_EUSART_is_tx_done                         (abs)        00000
-_EUSART_is_tx_ready                        (abs)        00000
-_GIE                                       (abs)        0005F
-_INTCONbits                                (abs)        0000B
-_INTERRUPT_InterruptManager                intentry     00004
-_Knock                                     cinit        0092A
-_LATA                                      (abs)        00016
-_LATAbits                                  (abs)        00016
-_LATB                                      (abs)        00017
-_LATC                                      (abs)        00018
-_LATCbits                                  (abs)        00018
-_LATD                                      (abs)        00019
-_LATDbits                                  (abs)        00019
-_LATE                                      (abs)        0001A
-_NVMADRH                                   (abs)        0081B
-_NVMADRL                                   (abs)        0081A
-_NVMCON1bits                               (abs)        0081E
-_NVMCON2                                   (abs)        0081F
-_NVMDATH                                   (abs)        0081D
-_NVMDATL                                   (abs)        0081C
-_ODCONA                                    (abs)        00F3A
-_ODCONB                                    (abs)        00F45
-_ODCONC                                    (abs)        00F50
-_ODCOND                                    (abs)        00F5B
-_ODCONE                                    (abs)        00F66
-_OSCCON1                                   (abs)        0088D
-_OSCCON3                                   (abs)        0088F
-_OSCEN                                     (abs)        00891
-_OSCFRQ                                    (abs)        00893
-_OSCILLATOR_Initialize                     cinit        00BE5
-_OSCTUNE                                   (abs)        00892
-_PIE3bits                                  (abs)        00719
-_PIE4bits                                  (abs)        0071A
-_PIN_MANAGER_Initialize                    cinit        00BEE
-_PIR3bits                                  (abs)        0070F
-_PIR4bits                                  (abs)        00710
-_PORTBbits                                 (abs)        0000D
-_PORTCbits                                 (abs)        0000E
-_PPSLOCK                                   (abs)        00E8F
-_PPSLOCKbits                               (abs)        00E8F
-_Pair                                      cinit        009C1
-_RC1PPS                                    (abs)        00F21
-_RC1REG                                    (abs)        00119
-_RC1STA                                    (abs)        0011D
-_RC1STAbits                                (abs)        0011D
-_RELAY_RL1_Disengage                       cinit        00F28
-_RELAY_RL1_Engage                          cinit        00AB4
-_RXPPSbits                                 (abs)        00ECB
-_SP1BRGH                                   (abs)        0011C
-_SP1BRGL                                   (abs)        0011B
-_STATUSbits                                (abs)        00003
-_SYSTEM_Initialize                         cinit        00BDA
-_SetIndication                             cinit        00AB9
-_T2CLKCON                                  (abs)        00290
-_T2CON                                     (abs)        0028E
-_T2CONbits                                 (abs)        0028E
-_T2HLT                                     (abs)        0028F
-_T2PR                                      (abs)        0028D
-_T2RST                                     (abs)        00291
-_T2TMR                                     (abs)        0028C
-_T4CLKCON                                  (abs)        00296
-_T4CON                                     (abs)        00294
-_T4CONbits                                 (abs)        00294
-_T4HLT                                     (abs)        00295
-_T4PR                                      (abs)        00293
-_T4RST                                     (abs)        00297
-_T4TMR                                     (abs)        00292
-_TMR2_DefaultInterruptHandler              text67       00123
-_TMR2_ISR                                  text66       00100
-_TMR2_Initialize                           cinit        00F3C
-_TMR2_InterruptHandler                     nvBANK1      000E1
-_TMR2_SetInterruptHandler                  cinit        00BCE
-_TMR2_Start                                cinit        00F33
-_TMR2_StartTimer                           cinit        00AB3
-_TMR2_Stop                                 cinit        00F36
-_TMR2_StopTimer                            cinit        00A15
-_TMR4_DefaultInterruptHandler              text62       00122
-_TMR4_ISR                                  text61       000F4
-_TMR4_Initialize                           cinit        00EF3
-_TMR4_InterruptHandler                     nvBANK1      000E7
-_TMR4_SetInterruptHandler                  cinit        00BD4
-_TMR4_Start                                cinit        00F07
-_TMR4_StartTimer                           cinit        00ADC
-_TMR4_Stop                                 cinit        00F39
-_TMR4_StopTimer                            cinit        00A8A
-_TRISA                                     (abs)        00011
-_TRISB                                     (abs)        00012
-_TRISC                                     (abs)        00013
-_TRISD                                     (abs)        00014
-_TRISE                                     (abs)        00015
-_TX1REG                                    (abs)        0011A
-_TX1STA                                    (abs)        0011E
-_TX1STAbits                                (abs)        0011E
-_UID                                       nvBANK1      000E9
-_Validate                                  cinit        00A16
-_WDTCON0                                   (abs)        0080C
-_WDTCON0bits                               (abs)        0080C
-_WDTCON1                                   (abs)        0080D
-_WPUA                                      (abs)        00F39
-_WPUB                                      (abs)        00F44
-_WPUC                                      (abs)        00F4F
-_WPUD                                      (abs)        00F5A
-_WPUE                                      (abs)        00F65
-_WR                                        (abs)        040F1
-_WWDT_Initialize                           cinit        00F0A
-_WaitResponse                              cinit        00A8B
-_WiFly_CheckInCMD                          cinit        00BAD
-_WiFly_CheckRecv                           cinit        008DB
-_WiFly_EnterCMDMode                        cinit        00846
-_WiFly_Example_InitializeAsClient          cinit        008AA
-_WiFly_FactoryReset                        cinit        00870
-_WiFly_ReadChar                            cinit        00A5E
-_WiFly_RebootCMD                           cinit        00896
-_WiFly_SaveConfig                          cinit        00EAB
-_WiFly_Send                                cinit        00E91
-_WiFly_SendCMD                             cinit        00E85
-_WiFly_SendCMD_DoubleArg                   cinit        00B94
-_WiFly_SendCMD_SingleArg                   cinit        00911
-_WiFly_SendString                          cinit        00E7E
-__CFG_BOREN$ON                             (abs)        00000
-__CFG_BORV$LO                              (abs)        00000
-__CFG_CLKOUTEN$OFF                         (abs)        00000
-__CFG_CP$OFF                               (abs)        00000
-__CFG_CPD$OFF                              (abs)        00000
-__CFG_CSWEN$ON                             (abs)        00000
-__CFG_DEBUG$OFF                            (abs)        00000
-__CFG_FCMEN$ON                             (abs)        00000
-__CFG_FEXTOSC$OFF                          (abs)        00000
-__CFG_LPBOREN$OFF                          (abs)        00000
-__CFG_LVP$ON                               (abs)        00000
-__CFG_MCLRE$ON                             (abs)        00000
-__CFG_PPS1WAY$ON                           (abs)        00000
-__CFG_PWRTE$OFF                            (abs)        00000
-__CFG_RSTOSC$HFINT1                        (abs)        00000
-__CFG_SCANE$available                      (abs)        00000
-__CFG_STVREN$ON                            (abs)        00000
-__CFG_WDTCCS$LFINTOSC                      (abs)        00000
-__CFG_WDTCPS$WDTCPS_18                     (abs)        00000
-__CFG_WDTCWS$WDTCWS_7                      (abs)        00000
-__CFG_WDTE$SWDTEN                          (abs)        00000
-__CFG_WRT$OFF                              (abs)        00000
-__CFG_ZCD$OFF                              (abs)        00000
-__Habs1                                    abs1         00000
-__Hbank0                                   bank0        00000
-__Hbank1                                   bank1        00000
-__Hbank10                                  bank10       00000
-__Hbank11                                  bank11       00000
-__Hbank12                                  bank12       00000
-__Hbank13                                  bank13       00000
-__Hbank14                                  bank14       00000
-__Hbank15                                  bank15       00000
-__Hbank16                                  bank16       00000
-__Hbank17                                  bank17       00000
-__Hbank18                                  bank18       00000
-__Hbank19                                  bank19       00000
-__Hbank2                                   bank2        00000
-__Hbank20                                  bank20       00000
-__Hbank21                                  bank21       00000
-__Hbank22                                  bank22       00000
-__Hbank23                                  bank23       00000
-__Hbank24                                  bank24       00000
-__Hbank25                                  bank25       00000
-__Hbank26                                  bank26       00000
-__Hbank27                                  bank27       00000
-__Hbank28                                  bank28       00000
-__Hbank29                                  bank29       00000
-__Hbank3                                   bank3        00000
-__Hbank30                                  bank30       00000
-__Hbank31                                  bank31       00000
-__Hbank4                                   bank4        00000
-__Hbank5                                   bank5        00000
-__Hbank6                                   bank6        00000
-__Hbank7                                   bank7        00000
-__Hbank8                                   bank8        00000
-__Hbank9                                   bank9        00000
-__Hbigram                                  bigram       00000
-__HbssBANK0                                bssBANK0     00000
-__HbssBANK1                                bssBANK1     00000
-__HbssCOMMON                               bssCOMMON    00000
-__Hcinit                                   cinit        01000
-__Hclrtext                                 clrtext      00000
-__Hcode                                    code         00000
-__Hcommon                                  common       00000
-__Hconfig                                  config       0800C
-__HcstackBANK0                             cstackBANK0  00000
-__HcstackBANK1                             cstackBANK1  00000
-__HcstackCOMMON                            cstackCOMMON 00000
-__HdataBANK1                               dataBANK1    00000
-__HdataBANK2                               dataBANK2    00000
-__Heeprom_data                             eeprom_data  00000
-__Hend_init                                end_init     00036
-__Hfunctab                                 functab      00000
-__HidataBANK1                              idataBANK1   00000
-__HidataBANK2                              idataBANK2   00000
-__Hidloc                                   idloc        00000
-__Hinit                                    init         00034
-__Hinittext                                inittext     00000
-__Hintentry                                intentry     00034
-__Hmaintext                                maintext     00000
-__HnvBANK1                                 nvBANK1      00000
-__Hpa_nodes0                               pa_nodes0    00000
-__Hpowerup                                 powerup      00000
-__Hram                                     ram          00000
-__Hreset_vec                               reset_vec    00002
-__Hsfr0                                    sfr0         00000
-__Hsfr1                                    sfr1         00000
-__Hsfr10                                   sfr10        00000
-__Hsfr11                                   sfr11        00000
-__Hsfr12                                   sfr12        00000
-__Hsfr13                                   sfr13        00000
-__Hsfr14                                   sfr14        00000
-__Hsfr15                                   sfr15        00000
-__Hsfr16                                   sfr16        00000
-__Hsfr17                                   sfr17        00000
-__Hsfr18                                   sfr18        00000
-__Hsfr19                                   sfr19        00000
-__Hsfr2                                    sfr2         00000
-__Hsfr20                                   sfr20        00000
-__Hsfr21                                   sfr21        00000
-__Hsfr22                                   sfr22        00000
-__Hsfr23                                   sfr23        00000
-__Hsfr24                                   sfr24        00000
-__Hsfr25                                   sfr25        00000
-__Hsfr26                                   sfr26        00000
-__Hsfr27                                   sfr27        00000
-__Hsfr28                                   sfr28        00000
-__Hsfr29                                   sfr29        00000
-__Hsfr3                                    sfr3         00000
-__Hsfr30                                   sfr30        00000
-__Hsfr31                                   sfr31        00000
-__Hsfr4                                    sfr4         00000
-__Hsfr5                                    sfr5         00000
-__Hsfr6                                    sfr6         00000
-__Hsfr7                                    sfr7         00000
-__Hsfr8                                    sfr8         00000
-__Hsfr9                                    sfr9         00000
-__Hspace_0                                 (abs)        0800C
-__Hspace_1                                 (abs)        0012D
-__Hspace_2                                 (abs)        00000
-__Hspace_3                                 (abs)        00000
-__Hstack                                   stack        00000
-__Hstrings                                 strings      00000
-__Hstringtext1                             stringtext1  00000
-__Hstringtext10                            stringtext10 00000
-__Hstringtext11                            stringtext11 00000
-__Hstringtext12                            stringtext12 00000
-__Hstringtext13                            stringtext13 00000
-__Hstringtext14                            stringtext14 00000
-__Hstringtext15                            stringtext15 00000
-__Hstringtext16                            stringtext16 00000
-__Hstringtext17                            stringtext17 00000
-__Hstringtext18                            stringtext18 00000
-__Hstringtext19                            stringtext19 00000
-__Hstringtext2                             stringtext2  00000
-__Hstringtext20                            stringtext20 00000
-__Hstringtext21                            stringtext21 00000
-__Hstringtext22                            stringtext22 00000
-__Hstringtext23                            stringtext23 00000
-__Hstringtext24                            stringtext24 00000
-__Hstringtext25                            stringtext25 00000
-__Hstringtext26                            stringtext26 00000
-__Hstringtext27                            stringtext27 00000
-__Hstringtext28                            stringtext28 00000
-__Hstringtext29                            stringtext29 00000
-__Hstringtext3                             stringtext3  00000
-__Hstringtext30                            stringtext30 00000
-__Hstringtext31                            stringtext31 00000
-__Hstringtext32                            stringtext32 00000
-__Hstringtext33                            stringtext33 00000
-__Hstringtext34                            stringtext34 00000
-__Hstringtext35                            stringtext35 00000
-__Hstringtext36                            stringtext36 00000
-__Hstringtext37                            stringtext37 00000
-__Hstringtext38                            stringtext38 00000
-__Hstringtext39                            stringtext39 00000
-__Hstringtext4                             stringtext4  00000
-__Hstringtext5                             stringtext5  00000
-__Hstringtext6                             stringtext6  00000
-__Hstringtext7                             stringtext7  00000
-__Hstringtext8                             stringtext8  00000
-__Hstringtext9                             stringtext9  00000
-__Htext                                    text         00000
-__Labs1                                    abs1         00000
-__Lbank0                                   bank0        00000
-__Lbank1                                   bank1        00000
-__Lbank10                                  bank10       00000
-__Lbank11                                  bank11       00000
-__Lbank12                                  bank12       00000
-__Lbank13                                  bank13       00000
-__Lbank14                                  bank14       00000
-__Lbank15                                  bank15       00000
-__Lbank16                                  bank16       00000
-__Lbank17                                  bank17       00000
-__Lbank18                                  bank18       00000
-__Lbank19                                  bank19       00000
-__Lbank2                                   bank2        00000
-__Lbank20                                  bank20       00000
-__Lbank21                                  bank21       00000
-__Lbank22                                  bank22       00000
-__Lbank23                                  bank23       00000
-__Lbank24                                  bank24       00000
-__Lbank25                                  bank25       00000
-__Lbank26                                  bank26       00000
-__Lbank27                                  bank27       00000
-__Lbank28                                  bank28       00000
-__Lbank29                                  bank29       00000
-__Lbank3                                   bank3        00000
-__Lbank30                                  bank30       00000
-__Lbank31                                  bank31       00000
-__Lbank4                                   bank4        00000
-__Lbank5                                   bank5        00000
-__Lbank6                                   bank6        00000
-__Lbank7                                   bank7        00000
-__Lbank8                                   bank8        00000
-__Lbank9                                   bank9        00000
-__Lbigram                                  bigram       00000
-__LbssBANK0                                bssBANK0     00000
-__LbssBANK1                                bssBANK1     00000
-__LbssCOMMON                               bssCOMMON    00000
-__Lcinit                                   cinit        00820
-__Lclrtext                                 clrtext      00000
-__Lcode                                    code         00000
-__Lcommon                                  common       00000
-__Lconfig                                  config       08007
-__LcstackBANK0                             cstackBANK0  00000
-__LcstackBANK1                             cstackBANK1  00000
-__LcstackCOMMON                            cstackCOMMON 00000
-__LdataBANK1                               dataBANK1    00000
-__LdataBANK2                               dataBANK2    00000
-__Leeprom_data                             eeprom_data  00000
-__Lend_init                                end_init     00034
-__Lfunctab                                 functab      00000
-__LidataBANK1                              idataBANK1   00000
-__LidataBANK2                              idataBANK2   00000
-__Lidloc                                   idloc        00000
-__Linit                                    init         00034
-__Linittext                                inittext     00000
-__Lintentry                                intentry     00004
-__Lmaintext                                maintext     00000
-__LnvBANK1                                 nvBANK1      00000
-__Lpa_nodes0                               pa_nodes0    00000
-__Lpowerup                                 powerup      00000
-__Lram                                     ram          00000
-__Lreset_vec                               reset_vec    00000
-__Lsfr0                                    sfr0         00000
-__Lsfr1                                    sfr1         00000
-__Lsfr10                                   sfr10        00000
-__Lsfr11                                   sfr11        00000
-__Lsfr12                                   sfr12        00000
-__Lsfr13                                   sfr13        00000
-__Lsfr14                                   sfr14        00000
-__Lsfr15                                   sfr15        00000
-__Lsfr16                                   sfr16        00000
-__Lsfr17                                   sfr17        00000
-__Lsfr18                                   sfr18        00000
-__Lsfr19                                   sfr19        00000
-__Lsfr2                                    sfr2         00000
-__Lsfr20                                   sfr20        00000
-__Lsfr21                                   sfr21        00000
-__Lsfr22                                   sfr22        00000
-__Lsfr23                                   sfr23        00000
-__Lsfr24                                   sfr24        00000
-__Lsfr25                                   sfr25        00000
-__Lsfr26                                   sfr26        00000
-__Lsfr27                                   sfr27        00000
-__Lsfr28                                   sfr28        00000
-__Lsfr29                                   sfr29        00000
-__Lsfr3                                    sfr3         00000
-__Lsfr30                                   sfr30        00000
-__Lsfr31                                   sfr31        00000
-__Lsfr4                                    sfr4         00000
-__Lsfr5                                    sfr5         00000
-__Lsfr6                                    sfr6         00000
-__Lsfr7                                    sfr7         00000
-__Lsfr8                                    sfr8         00000
-__Lsfr9                                    sfr9         00000
-__Lspace_0                                 (abs)        00000
-__Lspace_1                                 (abs)        00000
-__Lspace_2                                 (abs)        00000
-__Lspace_3                                 (abs)        00000
-__Lstack                                   stack        00000
-__Lstrings                                 strings      00000
-__Lstringtext1                             stringtext1  00000
-__Lstringtext10                            stringtext10 00000
-__Lstringtext11                            stringtext11 00000
-__Lstringtext12                            stringtext12 00000
-__Lstringtext13                            stringtext13 00000
-__Lstringtext14                            stringtext14 00000
-__Lstringtext15                            stringtext15 00000
-__Lstringtext16                            stringtext16 00000
-__Lstringtext17                            stringtext17 00000
-__Lstringtext18                            stringtext18 00000
-__Lstringtext19                            stringtext19 00000
-__Lstringtext2                             stringtext2  00000
-__Lstringtext20                            stringtext20 00000
-__Lstringtext21                            stringtext21 00000
-__Lstringtext22                            stringtext22 00000
-__Lstringtext23                            stringtext23 00000
-__Lstringtext24                            stringtext24 00000
-__Lstringtext25                            stringtext25 00000
-__Lstringtext26                            stringtext26 00000
-__Lstringtext27                            stringtext27 00000
-__Lstringtext28                            stringtext28 00000
-__Lstringtext29                            stringtext29 00000
-__Lstringtext3                             stringtext3  00000
-__Lstringtext30                            stringtext30 00000
-__Lstringtext31                            stringtext31 00000
-__Lstringtext32                            stringtext32 00000
-__Lstringtext33                            stringtext33 00000
-__Lstringtext34                            stringtext34 00000
-__Lstringtext35                            stringtext35 00000
-__Lstringtext36                            stringtext36 00000
-__Lstringtext37                            stringtext37 00000
-__Lstringtext38                            stringtext38 00000
-__Lstringtext39                            stringtext39 00000
-__Lstringtext4                             stringtext4  00000
-__Lstringtext5                             stringtext5  00000
-__Lstringtext6                             stringtext6  00000
-__Lstringtext7                             stringtext7  00000
-__Lstringtext8                             stringtext8  00000
-__Lstringtext9                             stringtext9  00000
-__Ltext                                    text         00000
-__S0                                       (abs)        0800C
-__S1                                       (abs)        0012D
-__S2                                       (abs)        00000
-__S3                                       (abs)        00000
-___bmul                                    cinit        00EB2
-___bmul@multiplicand                       cstackCOMMON 00071
-___bmul@multiplier                         cstackCOMMON 00073
-___bmul@product                            cstackCOMMON 00072
-___int_sp                                  stack        00000
-___latbits                                 (abs)        00002
-___lwdiv                                   cinit        00E59
-___lwdiv@counter                           cstackCOMMON 00077
-___lwdiv@dividend                          cstackCOMMON 00073
-___lwdiv@divisor                           cstackCOMMON 00071
-___lwdiv@quotient                          cstackCOMMON 00075
-___lwmod                                   cinit        00EBE
-___lwmod@counter                           cstackBANK0  00020
-___lwmod@dividend                          cstackCOMMON 0007A
-___lwmod@divisor                           cstackCOMMON 00078
-___sp                                      stack        00000
-___wmul                                    cinit        00EDE
-___wmul@multiplicand                       cstackCOMMON 00073
-___wmul@multiplier                         cstackCOMMON 00071
-___wmul@product                            cstackCOMMON 00075
-__end_ofPL10                               cinit        00F8F
-__end_ofPL12                               cinit        00F95
-__end_ofPL14                               cinit        00F9F
-__end_ofPL16                               cinit        00FA6
-__end_ofPL18                               cinit        00FAE
-__end_ofPL2                                cinit        00F5E
-__end_ofPL20                               cinit        00FB4
-__end_ofPL22                               cinit        00FBA
-__end_ofPL24                               cinit        01000
-__end_ofPL26                               cinit        00FC0
-__end_ofPL28                               cinit        00FC6
-__end_ofPL30                               cinit        00FCB
-__end_ofPL32                               cinit        00FD0
-__end_ofPL4                                cinit        00F6B
-__end_ofPL6                                cinit        00F77
-__end_ofPL8                                cinit        00F83
-__end_of_CheckResponse                     cinit        00B60
-__end_of_ClearIndicators                   cinit        00F33
-__end_of_Clear_RX_Buffer                   cinit        00AE8
-__end_of_EUSART_Initialize                 text18       0005D
-__end_of_EUSART_Read                       text57       000D1
-__end_of_EUSART_Receive_ISR                text71       000E7
-__end_of_EUSART_SetRxInterruptHandler      text18       00068
-__end_of_EUSART_SetTxInterruptHandler      text18       00063
-__end_of_EUSART_Transmit_ISR               text70       000BA
-__end_of_EUSART_Write                      text39       000A2
-__end_of_EUSART_is_rx_ready                cinit        00AB9
-__end_of_INTERRUPT_InterruptManager        intentry     00034
-__end_of_Knock                             cinit        0096D
-__end_of_OSCILLATOR_Initialize             cinit        00BEE
-__end_of_PIN_MANAGER_Initialize            cinit        00C2D
-__end_of_Pair                              cinit        009F3
-__end_of_RELAY_RL1_Disengage               cinit        00F2B
-__end_of_RELAY_RL1_Engage                  cinit        00AB6
-__end_of_SYSTEM_Initialize                 cinit        00BE5
-__end_of_SetIndication                     cinit        00ADC
-__end_of_TMR2_DefaultInterruptHandler      text67       00124
-__end_of_TMR2_ISR                          text66       0010C
-__end_of_TMR2_Initialize                   cinit        00F4F
-__end_of_TMR2_SetInterruptHandler          cinit        00BD4
-__end_of_TMR2_Start                        cinit        00F36
-__end_of_TMR2_StartTimer                   cinit        00AB4
-__end_of_TMR2_Stop                         cinit        00F39
-__end_of_TMR2_StopTimer                    cinit        00A16
-__end_of_TMR4_DefaultInterruptHandler      text62       00123
-__end_of_TMR4_ISR                          text61       00100
-__end_of_TMR4_Initialize                   cinit        00F07
-__end_of_TMR4_SetInterruptHandler          cinit        00BDA
-__end_of_TMR4_Start                        cinit        00F0A
-__end_of_TMR4_StartTimer                   cinit        00ADD
-__end_of_TMR4_Stop                         cinit        00F3C
-__end_of_TMR4_StopTimer                    cinit        00A8B
-__end_of_Validate                          cinit        00A46
-__end_of_WWDT_Initialize                   cinit        00F10
-__end_of_WaitResponse                      cinit        00AB3
-__end_of_WiFly_CheckInCMD                  cinit        00BB2
-__end_of_WiFly_CheckRecv                   cinit        00911
-__end_of_WiFly_EnterCMDMode                cinit        00870
-__end_of_WiFly_Example_InitializeAsClient  cinit        008DB
-__end_of_WiFly_FactoryReset                cinit        00896
-__end_of_WiFly_ReadChar                    cinit        00A6B
-__end_of_WiFly_RebootCMD                   cinit        008AA
-__end_of_WiFly_SaveConfig                  cinit        00EB2
-__end_of_WiFly_Send                        cinit        00EAB
-__end_of_WiFly_SendCMD                     cinit        00E91
-__end_of_WiFly_SendCMD_DoubleArg           cinit        00BAD
-__end_of_WiFly_SendCMD_SingleArg           cinit        0092A
-__end_of_WiFly_SendString                  cinit        00E85
-__end_of___bmul                            cinit        00EBE
-__end_of___lwdiv                           cinit        00E7E
-__end_of___lwmod                           cinit        00EDE
-__end_of___wmul                            cinit        00EF3
-__end_of__initialization                   cinit        00843
-__end_of_aokStr                            stringtext8  0130C
-__end_of_blink                             cinit        00FD8
-__end_of_cmdStr                            stringtext9  01310
-__end_of_connect_network                   cinit        00F19
-__end_of_connect_socket                    cinit        00B94
-__end_of_dpowers                           stringtext2  01288
-__end_of_eeprom_read                       cinit        00F28
-__end_of_eeprom_write                      cinit        00BCE
-__end_of_endStr                            stringtext7  012FE
-__end_of_get_response                      cinit        00A5E
-__end_of_goto_mode                         cinit        00A15
-__end_of_hardRebootStr                     stringtext5  012EE
-__end_of_hexpowers                         stringtext3  012B6
-__end_of_isdigit                           cinit        00E59
-__end_of_main                              cinit        009C1
-__end_of_openStr                           stringtext6  012F9
-__end_of_send_message                      cinit        00A8A
-__end_of_setFlag                           text63       00111
-__end_of_softRebootStr                     stringtext4  012C5
-__end_of_sprintf                           cinit        00E4B
-__end_of_strlen                            cinit        00B76
-__end_of_uart                              stringtext1  011DA
-__end_ofi1_SetIndication                   cinit        00FFA
-__end_ofi1_TMR4_Stop                       text63       00116
-__end_ofi1_TMR4_StopTimer                  text63       00113
-__initialization                           cinit        00820
-__pbssBANK0                                bssBANK0     0006E
-__pbssBANK1                                bssBANK1     000BE
-__pbssCOMMON                               bssCOMMON    0007C
-__pcstackBANK0                             cstackBANK0  00020
-__pcstackBANK1                             cstackBANK1  000D3
-__pcstackCOMMON                            cstackCOMMON 00070
-__pdataBANK1                               dataBANK1    000A0
-__pdataBANK2                               dataBANK2    00120
-__pidataBANK1                              idataBANK1   00068
-__pidataBANK2                              idataBANK2   000E7
-__pintentry                                intentry     00004
-__pmaintext                                cinit        0096D
-__pnvBANK1                                 nvBANK1      000E1
-__pstringtext1                             stringtext1  011C6
-__pstringtext10                            stringtext10 01000
-__pstringtext11                            stringtext11 01183
-__pstringtext12                            stringtext12 0119C
-__pstringtext13                            stringtext13 011B1
-__pstringtext14                            stringtext14 011DA
-__pstringtext15                            stringtext15 011ED
-__pstringtext16                            stringtext16 011FF
-__pstringtext17                            stringtext17 01210
-__pstringtext18                            stringtext18 01220
-__pstringtext19                            stringtext19 01230
-__pstringtext2                             stringtext2  0127E
-__pstringtext20                            stringtext20 0123E
-__pstringtext21                            stringtext21 0124C
-__pstringtext22                            stringtext22 0125A
-__pstringtext23                            stringtext23 01267
-__pstringtext24                            stringtext24 01273
-__pstringtext25                            stringtext25 01288
-__pstringtext26                            stringtext26 01292
-__pstringtext27                            stringtext27 0129C
-__pstringtext28                            stringtext28 012A5
-__pstringtext29                            stringtext29 012B6
-__pstringtext3                             stringtext3  012AE
-__pstringtext30                            stringtext30 012C5
-__pstringtext31                            stringtext31 012CC
-__pstringtext32                            stringtext32 012D3
-__pstringtext33                            stringtext33 012DA
-__pstringtext34                            stringtext34 012E1
-__pstringtext35                            stringtext35 012EE
-__pstringtext36                            stringtext36 012FE
-__pstringtext37                            stringtext37 01303
-__pstringtext38                            stringtext38 01310
-__pstringtext39                            stringtext39 00000
-__pstringtext4                             stringtext4  012BE
-__pstringtext5                             stringtext5  012E8
-__pstringtext6                             stringtext6  012F4
-__pstringtext7                             stringtext7  012F9
-__pstringtext8                             stringtext8  01308
-__pstringtext9                             stringtext9  0130C
-__ptext1                                   cinit        00F19
-__ptext10                                  cinit        00BDA
-__ptext11                                  cinit        00F0A
-__ptext12                                  cinit        00EF3
-__ptext13                                  cinit        00BD4
-__ptext14                                  cinit        00F3C
-__ptext15                                  cinit        00BCE
-__ptext16                                  cinit        00BEE
-__ptext17                                  cinit        00BE5
-__ptext18                                  text18       00036
-__ptext19                                  text18       0005D
-__ptext2                                   cinit        00F10
-__ptext20                                  text18       00063
-__ptext21                                  cinit        009C1
-__ptext22                                  cinit        00BB2
-__ptext23                                  cinit        0092A
-__ptext24                                  cinit        00A6B
-__ptext25                                  cinit        00B76
-__ptext26                                  cinit        00B94
-__ptext27                                  cinit        00C2D
-__ptext28                                  cinit        00E4B
-__ptext29                                  cinit        00EDE
-__ptext3                                   cinit        008AA
-__ptext30                                  cinit        00EBE
-__ptext31                                  cinit        00E59
-__ptext32                                  cinit        00EB2
-__ptext33                                  cinit        00BAD
-__ptext34                                  cinit        00846
-__ptext35                                  cinit        008DB
-__ptext36                                  cinit        00AE8
-__ptext37                                  cinit        00E7E
-__ptext38                                  cinit        00E91
-__ptext39                                  text39       00086
-__ptext4                                   cinit        00911
-__ptext40                                  cinit        00ADD
-__ptext41                                  cinit        00A46
-__ptext42                                  cinit        009F3
-__ptext43                                  cinit        00A8A
-__ptext44                                  cinit        00F39
-__ptext45                                  cinit        00ADC
-__ptext46                                  cinit        00F07
-__ptext47                                  cinit        00A15
-__ptext48                                  cinit        00F36
-__ptext49                                  cinit        00AB3
-__ptext5                                   cinit        00870
-__ptext50                                  cinit        00F33
-__ptext51                                  cinit        00AB9
-__ptext52                                  cinit        00F2B
-__ptext53                                  cinit        00A8B
-__ptext54                                  cinit        00B60
-__ptext55                                  cinit        00A5E
-__ptext56                                  cinit        00AB6
-__ptext57                                  text57       000BA
-__ptext58                                  cinit        00AB4
-__ptext59                                  cinit        00F28
-__ptext6                                   cinit        00E85
-__ptext61                                  text61       000F4
-__ptext62                                  text62       00122
-__ptext63                                  text63       0010C
-__ptext64                                  text63       00111
-__ptext65                                  text63       00113
-__ptext66                                  text66       00100
-__ptext67                                  text67       00123
-__ptext68                                  cinit        00FD0
-__ptext69                                  cinit        00FD8
-__ptext7                                   cinit        00EAB
-__ptext70                                  text70       000A2
-__ptext71                                  text71       000D1
-__ptext8                                   cinit        00896
-__ptext9                                   cinit        00A16
-__size_of_CheckResponse                    (abs)        00000
-__size_of_ClearIndicators                  (abs)        00000
-__size_of_Clear_RX_Buffer                  (abs)        00000
-__size_of_EUSART_Initialize                (abs)        00000
-__size_of_EUSART_Read                      (abs)        00000
-__size_of_EUSART_Receive_ISR               (abs)        00000
-__size_of_EUSART_SetRxInterruptHandler     (abs)        00000
-__size_of_EUSART_SetTxInterruptHandler     (abs)        00000
-__size_of_EUSART_Transmit_ISR              (abs)        00000
-__size_of_EUSART_Write                     (abs)        00000
-__size_of_EUSART_is_rx_ready               (abs)        00000
-__size_of_INTERRUPT_InterruptManager       (abs)        00000
-__size_of_Knock                            (abs)        00000
-__size_of_OSCILLATOR_Initialize            (abs)        00000
-__size_of_PIN_MANAGER_Initialize           (abs)        00000
-__size_of_Pair                             (abs)        00000
-__size_of_RELAY_RL1_Disengage              (abs)        00000
-__size_of_RELAY_RL1_Engage                 (abs)        00000
-__size_of_SYSTEM_Initialize                (abs)        00000
-__size_of_SetIndication                    (abs)        00000
-__size_of_TMR2_DefaultInterruptHandler     (abs)        00000
-__size_of_TMR2_ISR                         (abs)        00000
-__size_of_TMR2_Initialize                  (abs)        00000
-__size_of_TMR2_SetInterruptHandler         (abs)        00000
-__size_of_TMR2_Start                       (abs)        00000
-__size_of_TMR2_StartTimer                  (abs)        00000
-__size_of_TMR2_Stop                        (abs)        00000
-__size_of_TMR2_StopTimer                   (abs)        00000
-__size_of_TMR4_DefaultInterruptHandler     (abs)        00000
-__size_of_TMR4_ISR                         (abs)        00000
-__size_of_TMR4_Initialize                  (abs)        00000
-__size_of_TMR4_SetInterruptHandler         (abs)        00000
-__size_of_TMR4_Start                       (abs)        00000
-__size_of_TMR4_StartTimer                  (abs)        00000
-__size_of_TMR4_Stop                        (abs)        00000
-__size_of_TMR4_StopTimer                   (abs)        00000
-__size_of_Validate                         (abs)        00000
-__size_of_WWDT_Initialize                  (abs)        00000
-__size_of_WaitResponse                     (abs)        00000
-__size_of_WiFly_CheckInCMD                 (abs)        00000
-__size_of_WiFly_CheckRecv                  (abs)        00000
-__size_of_WiFly_EnterCMDMode               (abs)        00000
-__size_of_WiFly_Example_InitializeAsClient (abs)        00000
-__size_of_WiFly_FactoryReset               (abs)        00000
-__size_of_WiFly_ReadChar                   (abs)        00000
-__size_of_WiFly_RebootCMD                  (abs)        00000
-__size_of_WiFly_SaveConfig                 (abs)        00000
-__size_of_WiFly_Send                       (abs)        00000
-__size_of_WiFly_SendCMD                    (abs)        00000
-__size_of_WiFly_SendCMD_DoubleArg          (abs)        00000
-__size_of_WiFly_SendCMD_SingleArg          (abs)        00000
-__size_of_WiFly_SendString                 (abs)        00000
-__size_of___bmul                           (abs)        00000
-__size_of___lwdiv                          (abs)        00000
-__size_of___lwmod                          (abs)        00000
-__size_of___wmul                           (abs)        00000
-__size_of_blink                            (abs)        00000
-__size_of_connect_network                  (abs)        00000
-__size_of_connect_socket                   (abs)        00000
-__size_of_eeprom_read                      (abs)        00000
-__size_of_eeprom_write                     (abs)        00000
-__size_of_get_response                     (abs)        00000
-__size_of_goto_mode                        (abs)        00000
-__size_of_isdigit                          (abs)        00000
-__size_of_main                             (abs)        00000
-__size_of_send_message                     (abs)        00000
-__size_of_setFlag                          (abs)        00000
-__size_of_sprintf                          (abs)        00000
-__size_of_strlen                           (abs)        00000
-__size_ofi1_SetIndication                  (abs)        00000
-__size_ofi1_TMR4_Stop                      (abs)        00000
-__size_ofi1_TMR4_StopTimer                 (abs)        00000
-_aokStr                                    stringtext8  01308
-_blink                                     cinit        00FD0
-_cmdStr                                    stringtext9  0130C
-_connect_network                           cinit        00F10
-_connect_socket                            cinit        00B76
-_dpowers                                   stringtext2  0127E
-_eeprom_read                               cinit        00F19
-_eeprom_write                              cinit        00BB2
-_endStr                                    stringtext7  012F9
-_errStr                                    dataBANK1    000BA
-_eusartRxBuffer                            bssBANK1     000BE
-_eusartRxCount                             bssBANK1     000D1
-_eusartRxHead                              bssBANK0     0006E
-_eusartRxTail                              bssBANK1     000D2
-_eusartTxBuffer                            bssBANK1     000C6
-_eusartTxBufferRemaining                   nvBANK1      000EB
-_eusartTxHead                              bssCOMMON    0007C
-_eusartTxTail                              bssBANK0     0006F
-_failedStr                                 dataBANK1    000B3
-_get_response                              cinit        00A46
-_goto_mode                                 cinit        009F3
-_hardRebootStr                             stringtext5  012E8
-_hexpowers                                 stringtext3  012AE
-_inCMD                                     nvBANK1      000EA
-_indStatus                                 bssBANK1     000CE
-_isdigit                                   cinit        00E4B
-_isdigit$1889                              cstackCOMMON 00071
-_main                                      cinit        0096D
-_mode                                      bssBANK1     000D0
-_openStr                                   stringtext6  012F4
-_pingTime                                  bssBANK1     000CF
-_send_message                              cinit        00A6B
-_setFlag                                   text63       0010C
-_softRebootStr                             stringtext4  012BE
-_sprintf                                   cinit        00C2D
-_strlen                                    cinit        00B60
-_uart                                      stringtext1  011C6
-btemp                                      (abs)        0007E
-clear_ram0                                 clrtext      0011C
-connect_network@passwd                     cstackBANK0  0006C
-connect_network@ssid                       cstackBANK0  0006A
-connect_socket@addr                        cstackBANK0  00068
-connect_socket@port                        cstackBANK0  0006A
-eeprom_read@addr                           cstackCOMMON 00071
-eeprom_write@addr                          cstackCOMMON 00072
-eeprom_write@value                         cstackCOMMON 00071
-end_of_initialization                      cinit        00843
-get_response@status                        cstackCOMMON 00079
-goto_mode@target                           cstackCOMMON 00072
-i1SetIndication@set                        cstackCOMMON 00070
-i1_SetIndication                           cinit        00FD8
-i1_TMR4_Stop                               text63       00113
-i1_TMR4_StopTimer                          text63       00111
-init_ram                                   inittext     00116
-int$flags                                  (abs)        0007E
-intlevel0                                  functab      00000
-intlevel1                                  functab      00000
-intlevel2                                  functab      00000
-intlevel3                                  functab      00000
-intlevel4                                  functab      00000
-intlevel5                                  functab      00000
-isdigit@c                                  cstackCOMMON 00072
-reset_vec                                  reset_vec    00000
-send_message@message                       cstackBANK0  0006C
-sprintf@ap                                 cstackBANK0  0002E
-sprintf@c                                  cstackBANK0  00039
-sprintf@cp                                 cstackBANK0  0002C
-sprintf@f                                  cstackBANK0  00021
-sprintf@flag                               cstackBANK0  00034
-sprintf@idx                                cstackBANK0  0002B
-sprintf@len                                cstackBANK0  0002F
-sprintf@prec                               cstackBANK0  00033
-sprintf@sp                                 cstackBANK0  00036
-sprintf@val                                cstackBANK0  00031
-sprintf@width                              cstackBANK0  00037
-stackhi                                    (abs)        023EF
-stacklo                                    (abs)        020AD
-start                                      init         00034
-start_initialization                       cinit        00820
-strlen@cp                                  cstackCOMMON 00074
-strlen@s                                   cstackCOMMON 00071
-wtemp0                                     (abs)        0007E
+?___lwdiv                                 cstackCOMMON 00071
+?___lwmod                                 cstackCOMMON 00078
+?___wmul                                  cstackCOMMON 00071
+?_sprintf                                 cstackBANK0  00021
+?_strlen                                  cstackCOMMON 00071
+CheckResponse@chkString1                  cstackCOMMON 00076
+CheckResponse@chkString2                  cstackCOMMON 00078
+CheckResponse@chkString3                  cstackCOMMON 00079
+CheckResponse@i1                          cstackBANK0  00029
+CheckResponse@i2                          cstackBANK0  0002B
+CheckResponse@i3                          cstackBANK0  00026
+CheckResponse@input                       cstackBANK0  00028
+CheckResponse@length1                     cstackBANK0  00022
+CheckResponse@length2                     cstackBANK0  00024
+CheckResponse@length3                     cstackBANK0  00020
+EUSART_Read@readValue                     cstackCOMMON 00071
+EUSART_SetRxInterruptHandler@handler      cstackCOMMON 00071
+EUSART_SetTxInterruptHandler@handler      cstackCOMMON 00071
+EUSART_Write@txData                       cstackCOMMON 00071
+Knock@F15440                              dataBANK1    000A0
+Knock@knockString                         cstackBANK1  000D5
+Knock@returnVal                           cstackBANK1  000DF
+PIN_MANAGER_Initialize@state              cstackCOMMON 00071
+PL10                                      cinit        00F8F
+PL12                                      cinit        00F9B
+PL14                                      cinit        00FA7
+PL16                                      cinit        00FB1
+PL18                                      cinit        00FB8
+PL2                                       cinit        00F61
+PL20                                      cinit        00FC0
+PL22                                      cinit        00FC6
+PL24                                      text67       00060
+PL26                                      cinit        00FCC
+PL28                                      cinit        00FD2
+PL30                                      cinit        00FD8
+PL32                                      cinit        00FDD
+PL4                                       cinit        00F70
+PL6                                       cinit        00F7D
+PL8                                       cinit        00F89
+Pair@F15432                               dataBANK1    000AA
+Pair@pairString                           cstackBANK1  000D3
+Pair@returnVal                            cstackBANK1  000DC
+SetIndication@set                         cstackCOMMON 00071
+TMR2_SetInterruptHandler@InterruptHandler cstackCOMMON 00071
+TMR4_SetInterruptHandler@InterruptHandler cstackCOMMON 00071
+Validate@F15436                           dataBANK2    00120
+Validate@returnVal                        cstackBANK1  000E0
+Validate@valString                        cstackBANK1  000D3
+WaitResponse@chkString                    cstackCOMMON 00076
+WaitResponse@i                            cstackBANK0  00022
+WaitResponse@length                       cstackBANK0  00020
+WiFly_CheckRecv@chkString                 cstackCOMMON 00076
+WiFly_CheckRecv@i                         cstackBANK0  00022
+WiFly_CheckRecv@length                    cstackBANK0  00020
+WiFly_Send@command                        cstackCOMMON 00072
+WiFly_SendCMD@cmd                         cstackBANK0  00024
+WiFly_SendCMD_DoubleArg@arg1              cstackBANK0  0003C
+WiFly_SendCMD_DoubleArg@arg2              cstackBANK0  0003E
+WiFly_SendCMD_DoubleArg@cmdFormat         cstackBANK0  0003A
+WiFly_SendCMD_DoubleArg@txBuffer          cstackBANK0  00040
+WiFly_SendCMD_SingleArg@arg               cstackBANK0  0003C
+WiFly_SendCMD_SingleArg@cmdFormat         cstackBANK0  0003A
+WiFly_SendCMD_SingleArg@txBuffer          cstackBANK0  0003E
+WiFly_SendString@sendString               cstackCOMMON 00075
+_ANSELA                                   (abs)        00F38
+_ANSELB                                   (abs)        00F43
+_ANSELC                                   (abs)        00F4E
+_ANSELD                                   (abs)        00F59
+_ANSELE                                   (abs)        00F64
+_BAUD1CON                                 (abs)        0011F
+_CheckResponse                            cinit        00AEF
+_ClearIndicators                          cinit        00F29
+_Clear_RX_Buffer                          cinit        00AE4
+_EUSART_Initialize                        cinit        00F3A
+_EUSART_Read                              text56       000B8
+_EUSART_Receive_ISR                       text70       000CF
+_EUSART_RxDefaultInterruptHandler         nvBANK1      000E3
+_EUSART_SetRxInterruptHandler             cinit        00FFB
+_EUSART_SetTxInterruptHandler             cinit        00FE2
+_EUSART_Transmit_ISR                      text69       000A0
+_EUSART_TxDefaultInterruptHandler         nvBANK1      000E5
+_EUSART_Write                             text38       00084
+_EUSART_is_rx_ready                       cinit        00ABC
+_EUSART_is_tx_done                        (abs)        00000
+_EUSART_is_tx_ready                       (abs)        00000
+_GIE                                      (abs)        0005F
+_INTCONbits                               (abs)        0000B
+_INTERRUPT_InterruptManager               intentry     00004
+_Knock                                    cinit        00930
+_LATA                                     (abs)        00016
+_LATAbits                                 (abs)        00016
+_LATB                                     (abs)        00017
+_LATC                                     (abs)        00018
+_LATCbits                                 (abs)        00018
+_LATD                                     (abs)        00019
+_LATDbits                                 (abs)        00019
+_LATE                                     (abs)        0001A
+_NVMADRH                                  (abs)        0081B
+_NVMADRL                                  (abs)        0081A
+_NVMCON1bits                              (abs)        0081E
+_NVMCON2                                  (abs)        0081F
+_NVMDATH                                  (abs)        0081D
+_NVMDATL                                  (abs)        0081C
+_ODCONA                                   (abs)        00F3A
+_ODCONB                                   (abs)        00F45
+_ODCONC                                   (abs)        00F50
+_ODCOND                                   (abs)        00F5B
+_ODCONE                                   (abs)        00F66
+_OSCCON1                                  (abs)        0088D
+_OSCCON3                                  (abs)        0088F
+_OSCEN                                    (abs)        00891
+_OSCFRQ                                   (abs)        00893
+_OSCILLATOR_Initialize                    cinit        00BEC
+_OSCTUNE                                  (abs)        00892
+_PIE3bits                                 (abs)        00719
+_PIE4bits                                 (abs)        0071A
+_PIN_MANAGER_Initialize                   cinit        00BF5
+_PIR3bits                                 (abs)        0070F
+_PIR4bits                                 (abs)        00710
+_PORTBbits                                (abs)        0000D
+_PORTCbits                                (abs)        0000E
+_PPSLOCK                                  (abs)        00E8F
+_PPSLOCKbits                              (abs)        00E8F
+_Pair                                     cinit        009C7
+_RC1PPS                                   (abs)        00F21
+_RC1REG                                   (abs)        00119
+_RC1STA                                   (abs)        0011D
+_RC1STAbits                               (abs)        0011D
+_RELAY_RL1_Disengage                      cinit        00F26
+_RELAY_RL1_Engage                         cinit        00ABA
+_RXPPSbits                                (abs)        00ECB
+_SP1BRGH                                  (abs)        0011C
+_SP1BRGL                                  (abs)        0011B
+_STATUSbits                               (abs)        00003
+_SYSTEM_Initialize                        cinit        00BE1
+_SetIndication                            cinit        00ABF
+_T2CLKCON                                 (abs)        00290
+_T2CON                                    (abs)        0028E
+_T2CONbits                                (abs)        0028E
+_T2HLT                                    (abs)        0028F
+_T2PR                                     (abs)        0028D
+_T2RST                                    (abs)        00291
+_T2TMR                                    (abs)        0028C
+_T4CLKCON                                 (abs)        00296
+_T4CON                                    (abs)        00294
+_T4CONbits                                (abs)        00294
+_T4HLT                                    (abs)        00295
+_T4PR                                     (abs)        00293
+_T4RST                                    (abs)        00297
+_T4TMR                                    (abs)        00292
+_TMR2_DefaultInterruptHandler             text66       00121
+_TMR2_ISR                                 text65       000FE
+_TMR2_Initialize                          cinit        00FE8
+_TMR2_InterruptHandler                    nvBANK1      000E1
+_TMR2_SetInterruptHandler                 cinit        00BD5
+_TMR2_Start                               cinit        00F31
+_TMR2_StartTimer                          cinit        00AB9
+_TMR2_Stop                                cinit        00F34
+_TMR2_StopTimer                           cinit        00A1B
+_TMR4_DefaultInterruptHandler             text61       00120
+_TMR4_ISR                                 text60       000F2
+_TMR4_Initialize                          cinit        00EFA
+_TMR4_InterruptHandler                    nvBANK1      000E7
+_TMR4_SetInterruptHandler                 cinit        00BDB
+_TMR4_Start                               cinit        00F0E
+_TMR4_StartTimer                          cinit        00AE3
+_TMR4_Stop                                cinit        00F37
+_TMR4_StopTimer                           cinit        00A90
+_TRISA                                    (abs)        00011
+_TRISB                                    (abs)        00012
+_TRISC                                    (abs)        00013
+_TRISD                                    (abs)        00014
+_TRISE                                    (abs)        00015
+_TX1REG                                   (abs)        0011A
+_TX1STA                                   (abs)        0011E
+_TX1STAbits                               (abs)        0011E
+_UID                                      nvBANK1      000E9
+_Validate                                 cinit        00A1C
+_WDTCON0                                  (abs)        0080C
+_WDTCON0bits                              (abs)        0080C
+_WDTCON1                                  (abs)        0080D
+_WPUA                                     (abs)        00F39
+_WPUB                                     (abs)        00F44
+_WPUC                                     (abs)        00F4F
+_WPUD                                     (abs)        00F5A
+_WPUE                                     (abs)        00F65
+_WR                                       (abs)        040F1
+_WWDT_Initialize                          cinit        00F11
+_WaitResponse                             cinit        00A91
+_WiFly_CheckInCMD                         cinit        00BB4
+_WiFly_CheckRecv                          cinit        008E1
+_WiFly_EnterCMDMode                       cinit        0084C
+_WiFly_FactoryReset                       cinit        00876
+_WiFly_ReadChar                           cinit        00A64
+_WiFly_RebootCMD                          cinit        0089C
+_WiFly_SaveConfig                         cinit        00EB2
+_WiFly_Send                               cinit        00E98
+_WiFly_SendCMD                            cinit        00E8C
+_WiFly_SendCMD_DoubleArg                  cinit        00B9B
+_WiFly_SendCMD_SingleArg                  cinit        00917
+_WiFly_SendString                         cinit        00E85
+__CFG_BOREN$ON                            (abs)        00000
+__CFG_BORV$LO                             (abs)        00000
+__CFG_CLKOUTEN$OFF                        (abs)        00000
+__CFG_CP$OFF                              (abs)        00000
+__CFG_CPD$OFF                             (abs)        00000
+__CFG_CSWEN$ON                            (abs)        00000
+__CFG_DEBUG$OFF                           (abs)        00000
+__CFG_FCMEN$ON                            (abs)        00000
+__CFG_FEXTOSC$OFF                         (abs)        00000
+__CFG_LPBOREN$OFF                         (abs)        00000
+__CFG_LVP$ON                              (abs)        00000
+__CFG_MCLRE$ON                            (abs)        00000
+__CFG_PPS1WAY$ON                          (abs)        00000
+__CFG_PWRTE$OFF                           (abs)        00000
+__CFG_RSTOSC$HFINT1                       (abs)        00000
+__CFG_SCANE$available                     (abs)        00000
+__CFG_STVREN$ON                           (abs)        00000
+__CFG_WDTCCS$LFINTOSC                     (abs)        00000
+__CFG_WDTCPS$WDTCPS_18                    (abs)        00000
+__CFG_WDTCWS$WDTCWS_7                     (abs)        00000
+__CFG_WDTE$SWDTEN                         (abs)        00000
+__CFG_WRT$OFF                             (abs)        00000
+__CFG_ZCD$OFF                             (abs)        00000
+__Habs1                                   abs1         00000
+__Hbank0                                  bank0        00000
+__Hbank1                                  bank1        00000
+__Hbank10                                 bank10       00000
+__Hbank11                                 bank11       00000
+__Hbank12                                 bank12       00000
+__Hbank13                                 bank13       00000
+__Hbank14                                 bank14       00000
+__Hbank15                                 bank15       00000
+__Hbank16                                 bank16       00000
+__Hbank17                                 bank17       00000
+__Hbank18                                 bank18       00000
+__Hbank19                                 bank19       00000
+__Hbank2                                  bank2        00000
+__Hbank20                                 bank20       00000
+__Hbank21                                 bank21       00000
+__Hbank22                                 bank22       00000
+__Hbank23                                 bank23       00000
+__Hbank24                                 bank24       00000
+__Hbank25                                 bank25       00000
+__Hbank26                                 bank26       00000
+__Hbank27                                 bank27       00000
+__Hbank28                                 bank28       00000
+__Hbank29                                 bank29       00000
+__Hbank3                                  bank3        00000
+__Hbank30                                 bank30       00000
+__Hbank31                                 bank31       00000
+__Hbank4                                  bank4        00000
+__Hbank5                                  bank5        00000
+__Hbank6                                  bank6        00000
+__Hbank7                                  bank7        00000
+__Hbank8                                  bank8        00000
+__Hbank9                                  bank9        00000
+__Hbigram                                 bigram       00000
+__HbssBANK0                               bssBANK0     00000
+__HbssBANK1                               bssBANK1     00000
+__HbssCOMMON                              bssCOMMON    00000
+__Hcinit                                  cinit        01000
+__Hclrtext                                clrtext      00000
+__Hcode                                   code         00000
+__Hcommon                                 common       00000
+__Hconfig                                 config       0800C
+__HcstackBANK0                            cstackBANK0  00000
+__HcstackBANK1                            cstackBANK1  00000
+__HcstackCOMMON                           cstackCOMMON 00000
+__HdataBANK1                              dataBANK1    00000
+__HdataBANK2                              dataBANK2    00000
+__Heeprom_data                            eeprom_data  00000
+__Hend_init                               end_init     00036
+__Hfunctab                                functab      00000
+__HidataBANK1                             idataBANK1   00000
+__HidataBANK2                             idataBANK2   00000
+__Hidloc                                  idloc        00000
+__Hinit                                   init         00034
+__Hinittext                               inittext     00000
+__Hintentry                               intentry     00034
+__Hmaintext                               maintext     00000
+__HnvBANK1                                nvBANK1      00000
+__Hpa_nodes0                              pa_nodes0    00000
+__Hpowerup                                powerup      00000
+__Hram                                    ram          00000
+__Hreset_vec                              reset_vec    00002
+__Hsfr0                                   sfr0         00000
+__Hsfr1                                   sfr1         00000
+__Hsfr10                                  sfr10        00000
+__Hsfr11                                  sfr11        00000
+__Hsfr12                                  sfr12        00000
+__Hsfr13                                  sfr13        00000
+__Hsfr14                                  sfr14        00000
+__Hsfr15                                  sfr15        00000
+__Hsfr16                                  sfr16        00000
+__Hsfr17                                  sfr17        00000
+__Hsfr18                                  sfr18        00000
+__Hsfr19                                  sfr19        00000
+__Hsfr2                                   sfr2         00000
+__Hsfr20                                  sfr20        00000
+__Hsfr21                                  sfr21        00000
+__Hsfr22                                  sfr22        00000
+__Hsfr23                                  sfr23        00000
+__Hsfr24                                  sfr24        00000
+__Hsfr25                                  sfr25        00000
+__Hsfr26                                  sfr26        00000
+__Hsfr27                                  sfr27        00000
+__Hsfr28                                  sfr28        00000
+__Hsfr29                                  sfr29        00000
+__Hsfr3                                   sfr3         00000
+__Hsfr30                                  sfr30        00000
+__Hsfr31                                  sfr31        00000
+__Hsfr4                                   sfr4         00000
+__Hsfr5                                   sfr5         00000
+__Hsfr6                                   sfr6         00000
+__Hsfr7                                   sfr7         00000
+__Hsfr8                                   sfr8         00000
+__Hsfr9                                   sfr9         00000
+__Hspace_0                                (abs)        0800C
+__Hspace_1                                (abs)        0012D
+__Hspace_2                                (abs)        00000
+__Hspace_3                                (abs)        00000
+__Hstack                                  stack        00000
+__Hstrings                                strings      00000
+__Hstringtext1                            stringtext1  00000
+__Hstringtext10                           stringtext10 00000
+__Hstringtext11                           stringtext11 00000
+__Hstringtext12                           stringtext12 00000
+__Hstringtext13                           stringtext13 00000
+__Hstringtext14                           stringtext14 00000
+__Hstringtext15                           stringtext15 00000
+__Hstringtext16                           stringtext16 00000
+__Hstringtext17                           stringtext17 00000
+__Hstringtext18                           stringtext18 00000
+__Hstringtext19                           stringtext19 00000
+__Hstringtext2                            stringtext2  00000
+__Hstringtext20                           stringtext20 00000
+__Hstringtext21                           stringtext21 00000
+__Hstringtext22                           stringtext22 00000
+__Hstringtext23                           stringtext23 00000
+__Hstringtext24                           stringtext24 00000
+__Hstringtext25                           stringtext25 00000
+__Hstringtext26                           stringtext26 00000
+__Hstringtext27                           stringtext27 00000
+__Hstringtext28                           stringtext28 00000
+__Hstringtext29                           stringtext29 00000
+__Hstringtext3                            stringtext3  00000
+__Hstringtext30                           stringtext30 00000
+__Hstringtext31                           stringtext31 00000
+__Hstringtext32                           stringtext32 00000
+__Hstringtext33                           stringtext33 00000
+__Hstringtext34                           stringtext34 00000
+__Hstringtext35                           stringtext35 00000
+__Hstringtext36                           stringtext36 00000
+__Hstringtext37                           stringtext37 00000
+__Hstringtext38                           stringtext38 00000
+__Hstringtext39                           stringtext39 00000
+__Hstringtext4                            stringtext4  00000
+__Hstringtext5                            stringtext5  00000
+__Hstringtext6                            stringtext6  00000
+__Hstringtext7                            stringtext7  00000
+__Hstringtext8                            stringtext8  00000
+__Hstringtext9                            stringtext9  00000
+__Htext                                   text         00000
+__Labs1                                   abs1         00000
+__Lbank0                                  bank0        00000
+__Lbank1                                  bank1        00000
+__Lbank10                                 bank10       00000
+__Lbank11                                 bank11       00000
+__Lbank12                                 bank12       00000
+__Lbank13                                 bank13       00000
+__Lbank14                                 bank14       00000
+__Lbank15                                 bank15       00000
+__Lbank16                                 bank16       00000
+__Lbank17                                 bank17       00000
+__Lbank18                                 bank18       00000
+__Lbank19                                 bank19       00000
+__Lbank2                                  bank2        00000
+__Lbank20                                 bank20       00000
+__Lbank21                                 bank21       00000
+__Lbank22                                 bank22       00000
+__Lbank23                                 bank23       00000
+__Lbank24                                 bank24       00000
+__Lbank25                                 bank25       00000
+__Lbank26                                 bank26       00000
+__Lbank27                                 bank27       00000
+__Lbank28                                 bank28       00000
+__Lbank29                                 bank29       00000
+__Lbank3                                  bank3        00000
+__Lbank30                                 bank30       00000
+__Lbank31                                 bank31       00000
+__Lbank4                                  bank4        00000
+__Lbank5                                  bank5        00000
+__Lbank6                                  bank6        00000
+__Lbank7                                  bank7        00000
+__Lbank8                                  bank8        00000
+__Lbank9                                  bank9        00000
+__Lbigram                                 bigram       00000
+__LbssBANK0                               bssBANK0     00000
+__LbssBANK1                               bssBANK1     00000
+__LbssCOMMON                              bssCOMMON    00000
+__Lcinit                                  cinit        00826
+__Lclrtext                                clrtext      00000
+__Lcode                                   code         00000
+__Lcommon                                 common       00000
+__Lconfig                                 config       08007
+__LcstackBANK0                            cstackBANK0  00000
+__LcstackBANK1                            cstackBANK1  00000
+__LcstackCOMMON                           cstackCOMMON 00000
+__LdataBANK1                              dataBANK1    00000
+__LdataBANK2                              dataBANK2    00000
+__Leeprom_data                            eeprom_data  00000
+__Lend_init                               end_init     00034
+__Lfunctab                                functab      00000
+__LidataBANK1                             idataBANK1   00000
+__LidataBANK2                             idataBANK2   00000
+__Lidloc                                  idloc        00000
+__Linit                                   init         00034
+__Linittext                               inittext     00000
+__Lintentry                               intentry     00004
+__Lmaintext                               maintext     00000
+__LnvBANK1                                nvBANK1      00000
+__Lpa_nodes0                              pa_nodes0    00000
+__Lpowerup                                powerup      00000
+__Lram                                    ram          00000
+__Lreset_vec                              reset_vec    00000
+__Lsfr0                                   sfr0         00000
+__Lsfr1                                   sfr1         00000
+__Lsfr10                                  sfr10        00000
+__Lsfr11                                  sfr11        00000
+__Lsfr12                                  sfr12        00000
+__Lsfr13                                  sfr13        00000
+__Lsfr14                                  sfr14        00000
+__Lsfr15                                  sfr15        00000
+__Lsfr16                                  sfr16        00000
+__Lsfr17                                  sfr17        00000
+__Lsfr18                                  sfr18        00000
+__Lsfr19                                  sfr19        00000
+__Lsfr2                                   sfr2         00000
+__Lsfr20                                  sfr20        00000
+__Lsfr21                                  sfr21        00000
+__Lsfr22                                  sfr22        00000
+__Lsfr23                                  sfr23        00000
+__Lsfr24                                  sfr24        00000
+__Lsfr25                                  sfr25        00000
+__Lsfr26                                  sfr26        00000
+__Lsfr27                                  sfr27        00000
+__Lsfr28                                  sfr28        00000
+__Lsfr29                                  sfr29        00000
+__Lsfr3                                   sfr3         00000
+__Lsfr30                                  sfr30        00000
+__Lsfr31                                  sfr31        00000
+__Lsfr4                                   sfr4         00000
+__Lsfr5                                   sfr5         00000
+__Lsfr6                                   sfr6         00000
+__Lsfr7                                   sfr7         00000
+__Lsfr8                                   sfr8         00000
+__Lsfr9                                   sfr9         00000
+__Lspace_0                                (abs)        00000
+__Lspace_1                                (abs)        00000
+__Lspace_2                                (abs)        00000
+__Lspace_3                                (abs)        00000
+__Lstack                                  stack        00000
+__Lstrings                                strings      00000
+__Lstringtext1                            stringtext1  00000
+__Lstringtext10                           stringtext10 00000
+__Lstringtext11                           stringtext11 00000
+__Lstringtext12                           stringtext12 00000
+__Lstringtext13                           stringtext13 00000
+__Lstringtext14                           stringtext14 00000
+__Lstringtext15                           stringtext15 00000
+__Lstringtext16                           stringtext16 00000
+__Lstringtext17                           stringtext17 00000
+__Lstringtext18                           stringtext18 00000
+__Lstringtext19                           stringtext19 00000
+__Lstringtext2                            stringtext2  00000
+__Lstringtext20                           stringtext20 00000
+__Lstringtext21                           stringtext21 00000
+__Lstringtext22                           stringtext22 00000
+__Lstringtext23                           stringtext23 00000
+__Lstringtext24                           stringtext24 00000
+__Lstringtext25                           stringtext25 00000
+__Lstringtext26                           stringtext26 00000
+__Lstringtext27                           stringtext27 00000
+__Lstringtext28                           stringtext28 00000
+__Lstringtext29                           stringtext29 00000
+__Lstringtext3                            stringtext3  00000
+__Lstringtext30                           stringtext30 00000
+__Lstringtext31                           stringtext31 00000
+__Lstringtext32                           stringtext32 00000
+__Lstringtext33                           stringtext33 00000
+__Lstringtext34                           stringtext34 00000
+__Lstringtext35                           stringtext35 00000
+__Lstringtext36                           stringtext36 00000
+__Lstringtext37                           stringtext37 00000
+__Lstringtext38                           stringtext38 00000
+__Lstringtext39                           stringtext39 00000
+__Lstringtext4                            stringtext4  00000
+__Lstringtext5                            stringtext5  00000
+__Lstringtext6                            stringtext6  00000
+__Lstringtext7                            stringtext7  00000
+__Lstringtext8                            stringtext8  00000
+__Lstringtext9                            stringtext9  00000
+__Ltext                                   text         00000
+__S0                                      (abs)        0800C
+__S1                                      (abs)        0012D
+__S2                                      (abs)        00000
+__S3                                      (abs)        00000
+___bmul                                   cinit        00EB9
+___bmul@multiplicand                      cstackCOMMON 00071
+___bmul@multiplier                        cstackCOMMON 00073
+___bmul@product                           cstackCOMMON 00072
+___int_sp                                 stack        00000
+___latbits                                (abs)        00002
+___lwdiv                                  cinit        00E60
+___lwdiv@counter                          cstackCOMMON 00077
+___lwdiv@dividend                         cstackCOMMON 00073
+___lwdiv@divisor                          cstackCOMMON 00071
+___lwdiv@quotient                         cstackCOMMON 00075
+___lwmod                                  cinit        00EC5
+___lwmod@counter                          cstackBANK0  00020
+___lwmod@dividend                         cstackCOMMON 0007A
+___lwmod@divisor                          cstackCOMMON 00078
+___sp                                     stack        00000
+___wmul                                   cinit        00EE5
+___wmul@multiplicand                      cstackCOMMON 00073
+___wmul@multiplier                        cstackCOMMON 00071
+___wmul@product                           cstackCOMMON 00075
+__end_ofPL10                              cinit        00F9B
+__end_ofPL12                              cinit        00FA7
+__end_ofPL14                              cinit        00FB1
+__end_ofPL16                              cinit        00FB8
+__end_ofPL18                              cinit        00FC0
+__end_ofPL2                               cinit        00F70
+__end_ofPL20                              cinit        00FC6
+__end_ofPL22                              cinit        00FCC
+__end_ofPL24                              text67       00066
+__end_ofPL26                              cinit        00FD2
+__end_ofPL28                              cinit        00FD8
+__end_ofPL30                              cinit        00FDD
+__end_ofPL32                              cinit        00FE2
+__end_ofPL4                               cinit        00F7D
+__end_ofPL6                               cinit        00F89
+__end_ofPL8                               cinit        00F8F
+__end_of_CheckResponse                    cinit        00B67
+__end_of_ClearIndicators                  cinit        00F31
+__end_of_Clear_RX_Buffer                  cinit        00AEF
+__end_of_EUSART_Initialize                cinit        00F61
+__end_of_EUSART_Read                      text56       000CF
+__end_of_EUSART_Receive_ISR               text70       000E5
+__end_of_EUSART_SetRxInterruptHandler     cinit        01000
+__end_of_EUSART_SetTxInterruptHandler     cinit        00FE8
+__end_of_EUSART_Transmit_ISR              text69       000B8
+__end_of_EUSART_Write                     text38       000A0
+__end_of_EUSART_is_rx_ready               cinit        00ABF
+__end_of_INTERRUPT_InterruptManager       intentry     00034
+__end_of_Knock                            cinit        00973
+__end_of_OSCILLATOR_Initialize            cinit        00BF5
+__end_of_PIN_MANAGER_Initialize           cinit        00C34
+__end_of_Pair                             cinit        009F9
+__end_of_RELAY_RL1_Disengage              cinit        00F29
+__end_of_RELAY_RL1_Engage                 cinit        00ABC
+__end_of_SYSTEM_Initialize                cinit        00BEC
+__end_of_SetIndication                    cinit        00AE3
+__end_of_TMR2_DefaultInterruptHandler     text66       00122
+__end_of_TMR2_ISR                         text65       0010A
+__end_of_TMR2_Initialize                  cinit        00FFB
+__end_of_TMR2_SetInterruptHandler         cinit        00BDB
+__end_of_TMR2_Start                       cinit        00F34
+__end_of_TMR2_StartTimer                  cinit        00ABA
+__end_of_TMR2_Stop                        cinit        00F37
+__end_of_TMR2_StopTimer                   cinit        00A1C
+__end_of_TMR4_DefaultInterruptHandler     text61       00121
+__end_of_TMR4_ISR                         text60       000FE
+__end_of_TMR4_Initialize                  cinit        00F0E
+__end_of_TMR4_SetInterruptHandler         cinit        00BE1
+__end_of_TMR4_Start                       cinit        00F11
+__end_of_TMR4_StartTimer                  cinit        00AE4
+__end_of_TMR4_Stop                        cinit        00F3A
+__end_of_TMR4_StopTimer                   cinit        00A91
+__end_of_Validate                         cinit        00A4C
+__end_of_WWDT_Initialize                  cinit        00F17
+__end_of_WaitResponse                     cinit        00AB9
+__end_of_WiFly_CheckInCMD                 cinit        00BB9
+__end_of_WiFly_CheckRecv                  cinit        00917
+__end_of_WiFly_EnterCMDMode               cinit        00876
+__end_of_WiFly_FactoryReset               cinit        0089C
+__end_of_WiFly_ReadChar                   cinit        00A71
+__end_of_WiFly_RebootCMD                  cinit        008B0
+__end_of_WiFly_SaveConfig                 cinit        00EB9
+__end_of_WiFly_Send                       cinit        00EB2
+__end_of_WiFly_SendCMD                    cinit        00E98
+__end_of_WiFly_SendCMD_DoubleArg          cinit        00BB4
+__end_of_WiFly_SendCMD_SingleArg          cinit        00930
+__end_of_WiFly_SendString                 cinit        00E8C
+__end_of___bmul                           cinit        00EC5
+__end_of___lwdiv                          cinit        00E85
+__end_of___lwmod                          cinit        00EE5
+__end_of___wmul                           cinit        00EFA
+__end_of__initialization                  cinit        00849
+__end_of_aokStr                           stringtext8  0130C
+__end_of_blink                            text67       0003E
+__end_of_cmdStr                           stringtext9  01310
+__end_of_connect_network                  cinit        008E1
+__end_of_connect_socket                   cinit        00B9B
+__end_of_dpowers                          stringtext2  01288
+__end_of_eeprom_read                      cinit        00F26
+__end_of_eeprom_write                     cinit        00BD5
+__end_of_endStr                           stringtext7  012FE
+__end_of_get_response                     cinit        00A64
+__end_of_goto_mode                        cinit        00A1B
+__end_of_hardRebootStr                    stringtext5  012EE
+__end_of_hexpowers                        stringtext3  012B6
+__end_of_isdigit                          cinit        00E60
+__end_of_main                             cinit        009C7
+__end_of_openStr                          stringtext6  012F9
+__end_of_send_message                     cinit        00A90
+__end_of_setFlag                          text62       0010F
+__end_of_softRebootStr                    stringtext4  012C5
+__end_of_sprintf                          cinit        00E52
+__end_of_strlen                           cinit        00B7D
+__end_of_uart                             stringtext1  011DA
+__end_ofi1_SetIndication                  text67       00060
+__end_ofi1_TMR4_Stop                      text62       00114
+__end_ofi1_TMR4_StopTimer                 text62       00111
+__initialization                          cinit        00826
+__pbssBANK0                               bssBANK0     0006E
+__pbssBANK1                               bssBANK1     000BE
+__pbssCOMMON                              bssCOMMON    0007C
+__pcstackBANK0                            cstackBANK0  00020
+__pcstackBANK1                            cstackBANK1  000D3
+__pcstackCOMMON                           cstackCOMMON 00070
+__pdataBANK1                              dataBANK1    000A0
+__pdataBANK2                              dataBANK2    00120
+__pidataBANK1                             idataBANK1   00066
+__pidataBANK2                             idataBANK2   000E5
+__pintentry                               intentry     00004
+__pmaintext                               cinit        00973
+__pnvBANK1                                nvBANK1      000E1
+__pstringtext1                            stringtext1  011C6
+__pstringtext10                           stringtext10 01000
+__pstringtext11                           stringtext11 01183
+__pstringtext12                           stringtext12 0119C
+__pstringtext13                           stringtext13 011B1
+__pstringtext14                           stringtext14 011DA
+__pstringtext15                           stringtext15 011ED
+__pstringtext16                           stringtext16 011FF
+__pstringtext17                           stringtext17 01210
+__pstringtext18                           stringtext18 01220
+__pstringtext19                           stringtext19 01230
+__pstringtext2                            stringtext2  0127E
+__pstringtext20                           stringtext20 0123E
+__pstringtext21                           stringtext21 0124C
+__pstringtext22                           stringtext22 0125A
+__pstringtext23                           stringtext23 01267
+__pstringtext24                           stringtext24 01273
+__pstringtext25                           stringtext25 01288
+__pstringtext26                           stringtext26 01292
+__pstringtext27                           stringtext27 0129C
+__pstringtext28                           stringtext28 012A5
+__pstringtext29                           stringtext29 012B6
+__pstringtext3                            stringtext3  012AE
+__pstringtext30                           stringtext30 012C5
+__pstringtext31                           stringtext31 012CC
+__pstringtext32                           stringtext32 012D3
+__pstringtext33                           stringtext33 012DA
+__pstringtext34                           stringtext34 012E1
+__pstringtext35                           stringtext35 012EE
+__pstringtext36                           stringtext36 012FE
+__pstringtext37                           stringtext37 01303
+__pstringtext38                           stringtext38 01310
+__pstringtext39                           stringtext39 00000
+__pstringtext4                            stringtext4  012BE
+__pstringtext5                            stringtext5  012E8
+__pstringtext6                            stringtext6  012F4
+__pstringtext7                            stringtext7  012F9
+__pstringtext8                            stringtext8  01308
+__pstringtext9                            stringtext9  0130C
+__ptext1                                  cinit        00F17
+__ptext10                                 cinit        00F11
+__ptext11                                 cinit        00EFA
+__ptext12                                 cinit        00BDB
+__ptext13                                 cinit        00FE8
+__ptext14                                 cinit        00BD5
+__ptext15                                 cinit        00BF5
+__ptext16                                 cinit        00BEC
+__ptext17                                 cinit        00F3A
+__ptext18                                 cinit        00FE2
+__ptext19                                 cinit        00FFB
+__ptext2                                  cinit        008B0
+__ptext20                                 cinit        009C7
+__ptext21                                 cinit        00BB9
+__ptext22                                 cinit        00930
+__ptext23                                 cinit        00A71
+__ptext24                                 cinit        00B7D
+__ptext25                                 cinit        00B9B
+__ptext26                                 cinit        00C34
+__ptext27                                 cinit        00E52
+__ptext28                                 cinit        00EE5
+__ptext29                                 cinit        00EC5
+__ptext3                                  cinit        00917
+__ptext30                                 cinit        00E60
+__ptext31                                 cinit        00EB9
+__ptext32                                 cinit        00BB4
+__ptext33                                 cinit        0084C
+__ptext34                                 cinit        008E1
+__ptext35                                 cinit        00AEF
+__ptext36                                 cinit        00E85
+__ptext37                                 cinit        00E98
+__ptext38                                 text38       00084
+__ptext39                                 cinit        00AE4
+__ptext4                                  cinit        00876
+__ptext40                                 cinit        00A4C
+__ptext41                                 cinit        009F9
+__ptext42                                 cinit        00A90
+__ptext43                                 cinit        00F37
+__ptext44                                 cinit        00AE3
+__ptext45                                 cinit        00F0E
+__ptext46                                 cinit        00A1B
+__ptext47                                 cinit        00F34
+__ptext48                                 cinit        00AB9
+__ptext49                                 cinit        00F31
+__ptext5                                  cinit        00E8C
+__ptext50                                 cinit        00ABF
+__ptext51                                 cinit        00F29
+__ptext52                                 cinit        00A91
+__ptext53                                 cinit        00B67
+__ptext54                                 cinit        00A64
+__ptext55                                 cinit        00ABC
+__ptext56                                 text56       000B8
+__ptext57                                 cinit        00ABA
+__ptext58                                 cinit        00F26
+__ptext6                                  cinit        00EB2
+__ptext60                                 text60       000F2
+__ptext61                                 text61       00120
+__ptext62                                 text62       0010A
+__ptext63                                 text62       0010F
+__ptext64                                 text62       00111
+__ptext65                                 text65       000FE
+__ptext66                                 text66       00121
+__ptext67                                 text67       00036
+__ptext68                                 text67       0003E
+__ptext69                                 text69       000A0
+__ptext7                                  cinit        0089C
+__ptext70                                 text70       000CF
+__ptext8                                  cinit        00A1C
+__ptext9                                  cinit        00BE1
+__size_of_CheckResponse                   (abs)        00000
+__size_of_ClearIndicators                 (abs)        00000
+__size_of_Clear_RX_Buffer                 (abs)        00000
+__size_of_EUSART_Initialize               (abs)        00000
+__size_of_EUSART_Read                     (abs)        00000
+__size_of_EUSART_Receive_ISR              (abs)        00000
+__size_of_EUSART_SetRxInterruptHandler    (abs)        00000
+__size_of_EUSART_SetTxInterruptHandler    (abs)        00000
+__size_of_EUSART_Transmit_ISR             (abs)        00000
+__size_of_EUSART_Write                    (abs)        00000
+__size_of_EUSART_is_rx_ready              (abs)        00000
+__size_of_INTERRUPT_InterruptManager      (abs)        00000
+__size_of_Knock                           (abs)        00000
+__size_of_OSCILLATOR_Initialize           (abs)        00000
+__size_of_PIN_MANAGER_Initialize          (abs)        00000
+__size_of_Pair                            (abs)        00000
+__size_of_RELAY_RL1_Disengage             (abs)        00000
+__size_of_RELAY_RL1_Engage                (abs)        00000
+__size_of_SYSTEM_Initialize               (abs)        00000
+__size_of_SetIndication                   (abs)        00000
+__size_of_TMR2_DefaultInterruptHandler    (abs)        00000
+__size_of_TMR2_ISR                        (abs)        00000
+__size_of_TMR2_Initialize                 (abs)        00000
+__size_of_TMR2_SetInterruptHandler        (abs)        00000
+__size_of_TMR2_Start                      (abs)        00000
+__size_of_TMR2_StartTimer                 (abs)        00000
+__size_of_TMR2_Stop                       (abs)        00000
+__size_of_TMR2_StopTimer                  (abs)        00000
+__size_of_TMR4_DefaultInterruptHandler    (abs)        00000
+__size_of_TMR4_ISR                        (abs)        00000
+__size_of_TMR4_Initialize                 (abs)        00000
+__size_of_TMR4_SetInterruptHandler        (abs)        00000
+__size_of_TMR4_Start                      (abs)        00000
+__size_of_TMR4_StartTimer                 (abs)        00000
+__size_of_TMR4_Stop                       (abs)        00000
+__size_of_TMR4_StopTimer                  (abs)        00000
+__size_of_Validate                        (abs)        00000
+__size_of_WWDT_Initialize                 (abs)        00000
+__size_of_WaitResponse                    (abs)        00000
+__size_of_WiFly_CheckInCMD                (abs)        00000
+__size_of_WiFly_CheckRecv                 (abs)        00000
+__size_of_WiFly_EnterCMDMode              (abs)        00000
+__size_of_WiFly_FactoryReset              (abs)        00000
+__size_of_WiFly_ReadChar                  (abs)        00000
+__size_of_WiFly_RebootCMD                 (abs)        00000
+__size_of_WiFly_SaveConfig                (abs)        00000
+__size_of_WiFly_Send                      (abs)        00000
+__size_of_WiFly_SendCMD                   (abs)        00000
+__size_of_WiFly_SendCMD_DoubleArg         (abs)        00000
+__size_of_WiFly_SendCMD_SingleArg         (abs)        00000
+__size_of_WiFly_SendString                (abs)        00000
+__size_of___bmul                          (abs)        00000
+__size_of___lwdiv                         (abs)        00000
+__size_of___lwmod                         (abs)        00000
+__size_of___wmul                          (abs)        00000
+__size_of_blink                           (abs)        00000
+__size_of_connect_network                 (abs)        00000
+__size_of_connect_socket                  (abs)        00000
+__size_of_eeprom_read                     (abs)        00000
+__size_of_eeprom_write                    (abs)        00000
+__size_of_get_response                    (abs)        00000
+__size_of_goto_mode                       (abs)        00000
+__size_of_isdigit                         (abs)        00000
+__size_of_main                            (abs)        00000
+__size_of_send_message                    (abs)        00000
+__size_of_setFlag                         (abs)        00000
+__size_of_sprintf                         (abs)        00000
+__size_of_strlen                          (abs)        00000
+__size_ofi1_SetIndication                 (abs)        00000
+__size_ofi1_TMR4_Stop                     (abs)        00000
+__size_ofi1_TMR4_StopTimer                (abs)        00000
+_aokStr                                   stringtext8  01308
+_blink                                    text67       00036
+_cmdStr                                   stringtext9  0130C
+_connect_network                          cinit        008B0
+_connect_socket                           cinit        00B7D
+_dpowers                                  stringtext2  0127E
+_eeprom_read                              cinit        00F17
+_eeprom_write                             cinit        00BB9
+_endStr                                   stringtext7  012F9
+_errStr                                   dataBANK1    000BA
+_eusartRxBuffer                           bssBANK1     000BE
+_eusartRxCount                            bssBANK1     000D1
+_eusartRxHead                             bssBANK0     0006E
+_eusartRxTail                             bssBANK1     000D2
+_eusartTxBuffer                           bssBANK1     000C6
+_eusartTxBufferRemaining                  nvBANK1      000EB
+_eusartTxHead                             bssCOMMON    0007C
+_eusartTxTail                             bssBANK0     0006F
+_failedStr                                dataBANK1    000B3
+_get_response                             cinit        00A4C
+_goto_mode                                cinit        009F9
+_hardRebootStr                            stringtext5  012E8
+_hexpowers                                stringtext3  012AE
+_inCMD                                    nvBANK1      000EA
+_indStatus                                bssBANK1     000CE
+_isdigit                                  cinit        00E52
+_isdigit$1909                             cstackCOMMON 00071
+_main                                     cinit        00973
+_mode                                     bssBANK1     000D0
+_openStr                                  stringtext6  012F4
+_pingTime                                 bssBANK1     000CF
+_send_message                             cinit        00A71
+_setFlag                                  text62       0010A
+_softRebootStr                            stringtext4  012BE
+_sprintf                                  cinit        00C34
+_strlen                                   cinit        00B67
+_uart                                     stringtext1  011C6
+btemp                                     (abs)        0007E
+clear_ram0                                clrtext      0011A
+connect_network@passwd                    cstackBANK0  00068
+connect_network@ssid                      cstackBANK0  00066
+connect_socket@addr                       cstackBANK0  00068
+connect_socket@port                       cstackBANK0  0006A
+eeprom_read@addr                          cstackCOMMON 00071
+eeprom_write@addr                         cstackCOMMON 00072
+eeprom_write@value                        cstackCOMMON 00071
+end_of_initialization                     cinit        00849
+get_response@status                       cstackCOMMON 00079
+goto_mode@target                          cstackCOMMON 00072
+i1SetIndication@set                       cstackCOMMON 00070
+i1_SetIndication                          text67       0003E
+i1_TMR4_Stop                              text62       00111
+i1_TMR4_StopTimer                         text62       0010F
+init_ram                                  inittext     00114
+int$flags                                 (abs)        0007E
+intlevel0                                 functab      00000
+intlevel1                                 functab      00000
+intlevel2                                 functab      00000
+intlevel3                                 functab      00000
+intlevel4                                 functab      00000
+intlevel5                                 functab      00000
+isdigit@c                                 cstackCOMMON 00072
+reset_vec                                 reset_vec    00000
+send_message@message                      cstackBANK0  0006C
+sprintf@ap                                cstackBANK0  0002E
+sprintf@c                                 cstackBANK0  00039
+sprintf@cp                                cstackBANK0  0002C
+sprintf@f                                 cstackBANK0  00021
+sprintf@flag                              cstackBANK0  00034
+sprintf@idx                               cstackBANK0  0002B
+sprintf@len                               cstackBANK0  0002F
+sprintf@prec                              cstackBANK0  00033
+sprintf@sp                                cstackBANK0  00036
+sprintf@val                               cstackBANK0  00031
+sprintf@width                             cstackBANK0  00037
+stackhi                                   (abs)        023EF
+stacklo                                   (abs)        020AD
+start                                     init         00034
+start_initialization                      cinit        00826
+strlen@cp                                 cstackCOMMON 00074
+strlen@s                                  cstackCOMMON 00071
+wtemp0                                    (abs)        0007E
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 278 in file "main.c"
+		line 286 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1361,7 +1355,7 @@ FUNCTION INFORMATION:
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
- Hardware stack levels required when called:   14
+ Hardware stack levels required when called:   13
  This function calls:
 		_Knock
 		_Pair
@@ -1411,45 +1405,12 @@ Total ram usage:        1 bytes
 
  *************** function _connect_network *****************
  Defined at:
-		line 264 in file "main.c"
- Parameters:    Size  Location     Type
-  ssid            2   74[BANK0 ] PTR const unsigned char 
-		 -> STR_28(14), 
-  passwd          2   76[BANK0 ] PTR const unsigned char 
-		 -> STR_29(10), 
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, pclath, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
-      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        4 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:   13
- This function calls:
-		_WiFly_Example_InitializeAsClient
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _WiFly_Example_InitializeAsClient *****************
- Defined at:
-		line 43 in file "mcc_generated_files/EXAMPLE_WiFly.c"
+		line 263 in file "main.c"
  Parameters:    Size  Location     Type
   ssid            2   70[BANK0 ] PTR const unsigned char 
-		 -> STR_28(14), 
-  password        2   72[BANK0 ] PTR const unsigned char 
-		 -> STR_29(10), 
+		 -> STR_34(14), 
+  passwd          2   72[BANK0 ] PTR const unsigned char 
+		 -> STR_35(10), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -1476,7 +1437,7 @@ Total ram usage:        4 bytes
 		_WiFly_SendCMD_SingleArg
 		_WiFly_SendString
  This function is called by:
-		_connect_network
+		_main
  This function uses a non-reentrant model
 
 
@@ -1485,9 +1446,9 @@ Total ram usage:        4 bytes
 		line 115 in file "mcc_generated_files/WiFly.c"
  Parameters:    Size  Location     Type
   cmdFormat       2   26[BANK0 ] PTR const unsigned char 
-		 -> STR_9(19), STR_8(25), 
+		 -> STR_30(19), STR_29(25), STR_9(19), STR_8(25), 
   arg             2   28[BANK0 ] PTR const unsigned char 
-		 -> STR_29(10), STR_28(14), 
+		 -> STR_35(10), STR_34(14), 
  Auto vars:     Size  Location     Type
   txBuffer       40   30[BANK0 ] unsigned char [40]
  Return value:  Size  Location     Type
@@ -1513,7 +1474,7 @@ Total ram usage:       44 bytes
 		_WiFly_Send
 		_sprintf
  This function is called by:
-		_WiFly_Example_InitializeAsClient
+		_connect_network
  This function uses a non-reentrant model
 
 
@@ -1547,7 +1508,7 @@ Total ram usage:        2 bytes
 		_WiFly_SendCMD
 		_WiFly_SendString
  This function is called by:
-		_WiFly_Example_InitializeAsClient
+		_connect_network
 		_main
  This function uses a non-reentrant model
 
@@ -1557,7 +1518,8 @@ Total ram usage:        2 bytes
 		line 133 in file "mcc_generated_files/WiFly.c"
  Parameters:    Size  Location     Type
   cmd             2    4[BANK0 ] PTR const unsigned char 
-		 -> STR_10(18), STR_7(16), STR_6(21), 
+		 -> STR_31(18), STR_28(16), STR_10(18), STR_7(16), 
+		 -> STR_6(21), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -1582,7 +1544,7 @@ Total ram usage:        2 bytes
 		_WiFly_SendString
  This function is called by:
 		_WiFly_FactoryReset
-		_WiFly_Example_InitializeAsClient
+		_connect_network
  This function uses a non-reentrant model
 
 
@@ -1614,7 +1576,7 @@ Total ram usage:        0 bytes
 		_WiFly_SendString
  This function is called by:
 		_WiFly_FactoryReset
-		_WiFly_Example_InitializeAsClient
+		_connect_network
  This function uses a non-reentrant model
 
 
@@ -1653,7 +1615,7 @@ Total ram usage:        0 bytes
 
  *************** function _Validate *****************
  Defined at:
-		line 224 in file "main.c"
+		line 223 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2032,7 +1994,7 @@ Total ram usage:        2 bytes
 
  *************** function _Pair *****************
  Defined at:
-		line 207 in file "main.c"
+		line 206 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2099,7 +2061,7 @@ Total ram usage:        2 bytes
 
  *************** function _Knock *****************
  Defined at:
-		line 242 in file "main.c"
+		line 241 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2136,7 +2098,7 @@ Total ram usage:       13 bytes
 
  *************** function _send_message *****************
  Defined at:
-		line 198 in file "main.c"
+		line 197 in file "main.c"
  Parameters:    Size  Location     Type
   message         1    wreg     PTR const unsigned char 
 		 -> Knock@knockString(10), Validate@valString(13), Pair@pairString(9), 
@@ -2174,7 +2136,7 @@ Total ram usage:        1 bytes
 
  *************** function _connect_socket *****************
  Defined at:
-		line 160 in file "main.c"
+		line 159 in file "main.c"
  Parameters:    Size  Location     Type
   addr            2   72[BANK0 ] PTR const unsigned char 
 		 -> STR_22(12), 
@@ -2252,8 +2214,9 @@ Total ram usage:       46 bytes
 		 -> Knock@knockString(10), Validate@valString(13), Pair@pairString(9), WiFly_SendCMD_DoubleArg@txBuffer(40), 
 		 -> WiFly_SendCMD_SingleArg@txBuffer(40), 
   f               2    1[BANK0 ] PTR const unsigned char 
-		 -> STR_27(11), STR_26(14), STR_25(10), STR_20(13), 
-		 -> STR_13(13), STR_9(19), STR_8(25), 
+		 -> STR_30(19), STR_29(25), STR_27(11), STR_26(14), 
+		 -> STR_25(10), STR_20(13), STR_13(13), STR_9(19), 
+		 -> STR_8(25), 
  Auto vars:     Size  Location     Type
   sp              1   22[BANK0 ] PTR unsigned char 
 		 -> Knock@knockString(10), Validate@valString(13), Pair@pairString(9), WiFly_SendCMD_DoubleArg@txBuffer(40), 
@@ -2265,7 +2228,7 @@ Total ram usage:       46 bytes
   val             2   17[BANK0 ] unsigned int 
   len             2   15[BANK0 ] unsigned int 
   cp              2   12[BANK0 ] PTR const unsigned char 
-		 -> STR_30(7), sprintf@c(1), STR_29(10), STR_28(14), 
+		 -> STR_36(7), sprintf@c(1), STR_35(10), STR_34(14), 
 		 -> STR_23(5), STR_22(12), 
   c               1   25[BANK0 ] char 
   prec            1   19[BANK0 ] char 
@@ -2528,8 +2491,8 @@ Total ram usage:        2 bytes
 		line 79 in file "mcc_generated_files/WiFly.c"
  Parameters:    Size  Location     Type
   chkString       2    6[COMMON] PTR const unsigned char 
-		 -> openStr(5), STR_12(6), hardRebootStr(6), softRebootStr(7), 
-		 -> aokStr(4), endStr(5), cmdStr(4), 
+		 -> STR_33(6), openStr(5), STR_12(6), hardRebootStr(6), 
+		 -> softRebootStr(7), aokStr(4), endStr(5), cmdStr(4), 
  Auto vars:     Size  Location     Type
   i               2    2[BANK0 ] unsigned int 
   length          2    0[BANK0 ] unsigned int 
@@ -2559,13 +2522,13 @@ Total ram usage:        7 bytes
 		_WiFly_SendCMD
 		_WiFly_RebootCMD
 		_WiFly_FactoryReset
-		_WiFly_Example_InitializeAsClient
+		_connect_network
  This function uses a non-reentrant model
 
 
  *************** function _CheckResponse *****************
  Defined at:
-		line 121 in file "main.c"
+		line 120 in file "main.c"
  Parameters:    Size  Location     Type
   chkString1      2    6[COMMON] PTR const unsigned char 
 		 -> openStr(5), 
@@ -2610,10 +2573,11 @@ Total ram usage:       18 bytes
 		line 67 in file "mcc_generated_files/WiFly.c"
  Parameters:    Size  Location     Type
   sendString      2    5[COMMON] PTR const unsigned char 
-		 -> Knock@knockString(10), Validate@valString(13), Pair@pairString(9), STR_19(387), 
-		 -> STR_17(9), STR_15(14), STR_11(21), STR_10(18), 
-		 -> STR_7(16), STR_6(21), STR_5(16), STR_4(7), 
-		 -> STR_3(9), STR_2(7), 
+		 -> STR_32(21), STR_31(18), STR_28(16), Knock@knockString(10), 
+		 -> Validate@valString(13), Pair@pairString(9), STR_19(387), STR_17(9), 
+		 -> STR_15(14), STR_11(21), STR_10(18), STR_7(16), 
+		 -> STR_6(21), STR_5(16), STR_4(7), STR_3(9), 
+		 -> STR_2(7), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -2640,8 +2604,8 @@ Total ram usage:        2 bytes
 		_WiFly_RebootCMD
 		_WiFly_SaveConfig
 		_WiFly_FactoryReset
-		_WiFly_Example_InitializeAsClient
 		_send_message
+		_connect_network
  This function uses a non-reentrant model
 
 
@@ -2650,11 +2614,11 @@ Total ram usage:        2 bytes
 		line 50 in file "mcc_generated_files/WiFly.c"
  Parameters:    Size  Location     Type
   command         2    2[COMMON] PTR unsigned char 
-		 -> Knock@knockString(10), Validate@valString(13), Pair@pairString(9), STR_19(387), 
-		 -> STR_17(9), STR_15(14), STR_11(21), STR_10(18), 
-		 -> STR_7(16), STR_6(21), STR_5(16), STR_4(7), 
-		 -> STR_3(9), WiFly_SendCMD_DoubleArg@txBuffer(40), WiFly_SendCMD_SingleArg@txBuffer(40), STR_2(7), 
-		 -> STR_1(4), 
+		 -> STR_32(21), STR_31(18), STR_28(16), Knock@knockString(10), 
+		 -> Validate@valString(13), Pair@pairString(9), STR_19(387), STR_17(9), 
+		 -> STR_15(14), STR_11(21), STR_10(18), STR_7(16), 
+		 -> STR_6(21), STR_5(16), STR_4(7), STR_3(9), 
+		 -> WiFly_SendCMD_DoubleArg@txBuffer(40), WiFly_SendCMD_SingleArg@txBuffer(40), STR_2(7), STR_1(4), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -2750,7 +2714,7 @@ Total ram usage:        0 bytes
 
  *************** function _get_response *****************
  Defined at:
-		line 182 in file "main.c"
+		line 181 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2784,7 +2748,7 @@ Total ram usage:        1 bytes
 
  *************** function _goto_mode *****************
  Defined at:
-		line 97 in file "main.c"
+		line 96 in file "main.c"
  Parameters:    Size  Location     Type
   target          1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3069,7 +3033,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetIndication *****************
  Defined at:
-		line 80 in file "main.c"
+		line 79 in file "main.c"
  Parameters:    Size  Location     Type
   set             1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3099,7 +3063,7 @@ Total ram usage:        1 bytes
 
  *************** function _ClearIndicators *****************
  Defined at:
-		line 72 in file "main.c"
+		line 71 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3129,7 +3093,7 @@ Total ram usage:        0 bytes
 
  *************** function _WaitResponse *****************
  Defined at:
-		line 168 in file "main.c"
+		line 167 in file "main.c"
  Parameters:    Size  Location     Type
   chkString       2    6[COMMON] PTR const unsigned char 
 		 -> STR_24(8), STR_21(7), 
@@ -3166,16 +3130,16 @@ Total ram usage:        7 bytes
 		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\strlen.c"
  Parameters:    Size  Location     Type
   s               2    1[COMMON] PTR const unsigned char 
-		 -> STR_24(8), STR_21(7), errStr(4), failedStr(7), 
-		 -> STR_18(5), STR_16(7), STR_14(8), openStr(5), 
-		 -> STR_12(6), hardRebootStr(6), softRebootStr(7), aokStr(4), 
-		 -> endStr(5), cmdStr(4), 
+		 -> STR_33(6), STR_24(8), STR_21(7), errStr(4), 
+		 -> failedStr(7), STR_18(5), STR_16(7), STR_14(8), 
+		 -> openStr(5), STR_12(6), hardRebootStr(6), softRebootStr(7), 
+		 -> aokStr(4), endStr(5), cmdStr(4), 
  Auto vars:     Size  Location     Type
   cp              2    4[COMMON] PTR const unsigned char 
-		 -> STR_24(8), STR_21(7), errStr(4), failedStr(7), 
-		 -> STR_18(5), STR_16(7), STR_14(8), openStr(5), 
-		 -> STR_12(6), hardRebootStr(6), softRebootStr(7), aokStr(4), 
-		 -> endStr(5), cmdStr(4), 
+		 -> STR_33(6), STR_24(8), STR_21(7), errStr(4), 
+		 -> failedStr(7), STR_18(5), STR_16(7), STR_14(8), 
+		 -> openStr(5), STR_12(6), hardRebootStr(6), softRebootStr(7), 
+		 -> aokStr(4), endStr(5), cmdStr(4), 
  Return value:  Size  Location     Type
                   2    1[COMMON] unsigned int 
  Registers used:
@@ -3457,7 +3421,7 @@ Total ram usage:        0 bytes
 
  *************** function _setFlag *****************
  Defined at:
-		line 273 in file "main.c"
+		line 281 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3609,7 +3573,7 @@ Total ram usage:        0 bytes
 
  *************** function _blink *****************
  Defined at:
-		line 269 in file "main.c"
+		line 277 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3640,7 +3604,7 @@ Total ram usage:        0 bytes
 
  *************** function i1_SetIndication *****************
  Defined at:
-		line 80 in file "main.c"
+		line 79 in file "main.c"
  Parameters:    Size  Location     Type
   set             1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3732,31 +3696,31 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
-		___lwdiv       		CODE           	0E59	0000	38
+		___lwdiv       		CODE           	0E60	0000	38
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c estimated size: 38
 
 mcc_generated_files/tmr4.c
-		_TMR4_ISR      		CODE           	00F4	0000	13
-		_TMR4_Initialize		CODE           	0EF3	0000	21
-		_TMR4_Stop     		CODE           	0F39	0000	4
-		_TMR4_Start    		CODE           	0F07	0000	4
-		_TMR4_SetInterruptHandler		CODE           	0BD4	0000	7
-		_TMR4_StopTimer		CODE           	0A8A	0000	2
-		_TMR4_DefaultInterruptHandler		CODE           	0122	0000	2
-		_TMR4_StartTimer		CODE           	0ADC	0000	2
+		_TMR4_ISR      		CODE           	00F2	0000	13
+		_TMR4_Initialize		CODE           	0EFA	0000	21
+		_TMR4_Stop     		CODE           	0F37	0000	4
+		_TMR4_Start    		CODE           	0F0E	0000	4
+		_TMR4_SetInterruptHandler		CODE           	0BDB	0000	7
+		_TMR4_StopTimer		CODE           	0A90	0000	2
+		_TMR4_DefaultInterruptHandler		CODE           	0120	0000	2
+		_TMR4_StartTimer		CODE           	0AE3	0000	2
 
 mcc_generated_files/tmr4.c estimated size: 55
 
 mcc_generated_files/tmr2.c
-		_TMR2_ISR      		CODE           	0100	0000	13
-		_TMR2_Initialize		CODE           	0F3C	0000	20
-		_TMR2_Stop     		CODE           	0F36	0000	4
-		_TMR2_Start    		CODE           	0F33	0000	4
-		_TMR2_SetInterruptHandler		CODE           	0BCE	0000	7
-		_TMR2_StopTimer		CODE           	0A15	0000	2
-		_TMR2_DefaultInterruptHandler		CODE           	0123	0000	2
-		_TMR2_StartTimer		CODE           	0AB3	0000	2
+		_TMR2_ISR      		CODE           	00FE	0000	13
+		_TMR2_Initialize		CODE           	0FE8	0000	20
+		_TMR2_Stop     		CODE           	0F34	0000	4
+		_TMR2_Start    		CODE           	0F31	0000	4
+		_TMR2_SetInterruptHandler		CODE           	0BD5	0000	7
+		_TMR2_StopTimer		CODE           	0A1B	0000	2
+		_TMR2_DefaultInterruptHandler		CODE           	0121	0000	2
+		_TMR2_StartTimer		CODE           	0AB9	0000	2
 
 mcc_generated_files/tmr2.c estimated size: 54
 
@@ -3766,146 +3730,141 @@ mcc_generated_files/interrupt_manager.c
 mcc_generated_files/interrupt_manager.c estimated size: 49
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul8.c
-		___bmul        		CODE           	0EB2	0000	13
+		___bmul        		CODE           	0EB9	0000	13
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul8.c estimated size: 13
 
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	0BEE	0000	64
+		_PIN_MANAGER_Initialize		CODE           	0BF5	0000	64
 
 mcc_generated_files/pin_manager.c estimated size: 64
 
 mcc_generated_files/Relay_app.c
-		_RELAY_RL1_Disengage		CODE           	0F28	0000	4
-		_RELAY_RL1_Engage		CODE           	0AB4	0000	3
+		_RELAY_RL1_Disengage		CODE           	0F26	0000	4
+		_RELAY_RL1_Engage		CODE           	0ABA	0000	3
 
 mcc_generated_files/Relay_app.c estimated size: 7
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\isdigit.c
-		_isdigit       		CODE           	0E4B	0000	15
+		_isdigit       		CODE           	0E52	0000	15
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\isdigit.c estimated size: 15
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\strlen.c
-		_strlen        		CODE           	0B60	0000	23
+		_strlen        		CODE           	0B67	0000	23
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\strlen.c estimated size: 23
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eeread.c
-		_eeprom_read   		CODE           	0F19	0000	16
+		_eeprom_read   		CODE           	0F17	0000	16
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eeread.c estimated size: 16
 
 shared
-		PL12           		CODE           	0F8F	0000	7
-		PL8            		CODE           	0F77	0000	13
-		PL22           		CODE           	0FB4	0000	7
-		PL32           		CODE           	0FCB	0000	6
+		PL12           		CODE           	0F9B	0000	13
+		PL8            		CODE           	0F89	0000	7
+		PL22           		CODE           	0FC6	0000	7
+		PL32           		CODE           	0FDD	0000	6
 		_cmdStr        		STRCODE        	130C	0000	5
 		_openStr       		STRCODE        	12F4	0000	6
-		PL14           		CODE           	0F95	0000	11
-		PL24           		CODE           	0FFA	0000	7
+		PL14           		CODE           	0FA7	0000	11
+		PL24           		CODE           	0060	0000	7
 		_endStr        		STRCODE        	12F9	0000	6
-		PL16           		CODE           	0F9F	0000	8
+		PL16           		CODE           	0FB1	0000	8
 		_hardRebootStr 		STRCODE        	12E8	0000	7
-		PL26           		CODE           	0FBA	0000	7
+		PL26           		CODE           	0FCC	0000	7
 		_dpowers       		STRCODE        	127E	0000	11
-		PL18           		CODE           	0FA6	0000	9
-		i1_SetIndication		CODE           	0FD8	0000	35
-		PL28           		CODE           	0FC0	0000	7
+		PL18           		CODE           	0FB8	0000	9
+		i1_SetIndication		CODE           	003E	0000	35
+		PL28           		CODE           	0FD2	0000	7
 		_uart          		STRCODE        	11C6	0000	21
-		i1_TMR4_Stop   		CODE           	0113	0000	4
+		i1_TMR4_Stop   		CODE           	0111	0000	4
 		_aokStr        		STRCODE        	1308	0000	5
-		i1_TMR4_StopTimer		CODE           	0111	0000	3
+		i1_TMR4_StopTimer		CODE           	010F	0000	3
 		_softRebootStr 		STRCODE        	12BE	0000	8
-		__initialization		CODE           	0820	0000	36
+		__initialization		CODE           	0826	0000	36
 		_hexpowers     		STRCODE        	12AE	0000	9
-		PL2            		CODE           	0F4F	0000	16
-		PL10           		CODE           	0F83	0000	13
-		PL4            		CODE           	0F5E	0000	14
-		PL20           		CODE           	0FAE	0000	7
-		PL30           		CODE           	0FC6	0000	6
-		PL6            		CODE           	0F6B	0000	13
+		PL2            		CODE           	0F61	0000	16
+		PL10           		CODE           	0F8F	0000	13
+		PL4            		CODE           	0F70	0000	14
+		PL20           		CODE           	0FC0	0000	7
+		PL30           		CODE           	0FD8	0000	6
+		PL6            		CODE           	0F7D	0000	13
 
 shared estimated size: 307
 
 mcc_generated_files/mcc.c
-		_OSCILLATOR_Initialize		CODE           	0BE5	0000	10
-		_SYSTEM_Initialize		CODE           	0BDA	0000	12
-		_WWDT_Initialize		CODE           	0F0A	0000	7
+		_OSCILLATOR_Initialize		CODE           	0BEC	0000	10
+		_SYSTEM_Initialize		CODE           	0BE1	0000	12
+		_WWDT_Initialize		CODE           	0F11	0000	7
 
 mcc_generated_files/mcc.c estimated size: 29
 
-mcc_generated_files/EXAMPLE_WiFly.c
-		_WiFly_Example_InitializeAsClient		CODE           	08AA	0000	50
-
-mcc_generated_files/EXAMPLE_WiFly.c estimated size: 50
-
 mcc_generated_files/WiFly.c
-		_Clear_RX_Buffer		CODE           	0ADD	0000	12
-		_WiFly_SendCMD_DoubleArg		CODE           	0B94	0000	26
-		_WiFly_SendCMD_SingleArg		CODE           	0911	0000	26
-		_WiFly_Send    		CODE           	0E91	0000	27
-		_WiFly_SendCMD 		CODE           	0E85	0000	13
-		_WiFly_SaveConfig		CODE           	0EAB	0000	8
-		_WiFly_SendString		CODE           	0E7E	0000	8
-		_WiFly_CheckRecv		CODE           	08DB	0000	55
-		_WiFly_ReadChar		CODE           	0A5E	0000	14
-		_WiFly_EnterCMDMode		CODE           	0846	0000	43
-		_WiFly_RebootCMD		CODE           	0896	0000	21
-		_WiFly_CheckInCMD		CODE           	0BAD	0000	6
-		_WiFly_FactoryReset		CODE           	0870	0000	39
+		_Clear_RX_Buffer		CODE           	0AE4	0000	12
+		_WiFly_SendCMD_DoubleArg		CODE           	0B9B	0000	26
+		_WiFly_SendCMD_SingleArg		CODE           	0917	0000	26
+		_WiFly_Send    		CODE           	0E98	0000	27
+		_WiFly_SendCMD 		CODE           	0E8C	0000	13
+		_WiFly_SaveConfig		CODE           	0EB2	0000	8
+		_WiFly_SendString		CODE           	0E85	0000	8
+		_WiFly_CheckRecv		CODE           	08E1	0000	55
+		_WiFly_ReadChar		CODE           	0A64	0000	14
+		_WiFly_EnterCMDMode		CODE           	084C	0000	43
+		_WiFly_RebootCMD		CODE           	089C	0000	21
+		_WiFly_CheckInCMD		CODE           	0BB4	0000	6
+		_WiFly_FactoryReset		CODE           	0876	0000	39
 
 mcc_generated_files/WiFly.c estimated size: 298
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eewrite.c
-		_eeprom_write  		CODE           	0BB2	0000	29
+		_eeprom_write  		CODE           	0BB9	0000	29
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eewrite.c estimated size: 29
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
-		___lwmod       		CODE           	0EBE	0000	33
+		___lwmod       		CODE           	0EC5	0000	33
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c estimated size: 33
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
-		_sprintf       		CODE           	0C2D	0000	543
+		_sprintf       		CODE           	0C34	0000	543
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c estimated size: 543
 
 mcc_generated_files/eusart.c
-		_EUSART_SetRxInterruptHandler		CODE           	0063	0000	6
-		_EUSART_SetTxInterruptHandler		CODE           	005D	0000	7
-		_EUSART_Read   		CODE           	00BA	0000	24
-		_EUSART_Write  		CODE           	0086	0000	29
-		_EUSART_Transmit_ISR		CODE           	00A2	0000	25
-		_EUSART_Initialize		CODE           	0036	0000	40
-		_EUSART_Receive_ISR		CODE           	00D1	0000	23
-		_EUSART_is_rx_ready		CODE           	0AB6	0000	4
+		_EUSART_SetRxInterruptHandler		CODE           	0FFB	0000	6
+		_EUSART_SetTxInterruptHandler		CODE           	0FE2	0000	7
+		_EUSART_Read   		CODE           	00B8	0000	24
+		_EUSART_Write  		CODE           	0084	0000	29
+		_EUSART_Transmit_ISR		CODE           	00A0	0000	25
+		_EUSART_Initialize		CODE           	0F3A	0000	40
+		_EUSART_Receive_ISR		CODE           	00CF	0000	23
+		_EUSART_is_rx_ready		CODE           	0ABC	0000	4
 
 mcc_generated_files/eusart.c estimated size: 158
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
-		___wmul        		CODE           	0EDE	0000	22
+		___wmul        		CODE           	0EE5	0000	22
 
 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c estimated size: 22
 
 main.c
-		_get_response  		CODE           	0A46	0000	25
-		_SetIndication 		CODE           	0AB9	0000	36
-		_CheckResponse 		CODE           	0AE8	0000	121
-		_Validate      		CODE           	0A16	0000	49
-		_send_message  		CODE           	0A6B	0000	32
-		_connect_socket		CODE           	0B76	0000	31
-		_setFlag       		CODE           	010C	0000	6
-		_main          		CODE           	096D	0000	85
-		_goto_mode     		CODE           	09F3	0000	35
-		_Pair          		CODE           	09C1	0000	51
-		_connect_network		CODE           	0F10	0000	10
-		_WaitResponse  		CODE           	0A8B	0000	41
-		_ClearIndicators		CODE           	0F2B	0000	9
-		_blink         		CODE           	0FD0	0000	9
-		_Knock         		CODE           	092A	0000	68
+		_get_response  		CODE           	0A4C	0000	25
+		_SetIndication 		CODE           	0ABF	0000	37
+		_CheckResponse 		CODE           	0AEF	0000	121
+		_Validate      		CODE           	0A1C	0000	49
+		_send_message  		CODE           	0A71	0000	32
+		_connect_socket		CODE           	0B7D	0000	31
+		_setFlag       		CODE           	010A	0000	6
+		_main          		CODE           	0973	0000	85
+		_goto_mode     		CODE           	09F9	0000	35
+		_Pair          		CODE           	09C7	0000	51
+		_connect_network		CODE           	08B0	0000	50
+		_WaitResponse  		CODE           	0A91	0000	41
+		_ClearIndicators		CODE           	0F29	0000	9
+		_blink         		CODE           	0036	0000	9
+		_Knock         		CODE           	0930	0000	68
 
-main.c estimated size: 608
+main.c estimated size: 649
 

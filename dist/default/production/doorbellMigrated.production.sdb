@@ -97,16 +97,16 @@ TMR2_LC4_OUT 17
 [e E15168 . `uc
 WiFly 0
 ]
-"67 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
-[e E15395 connection_modes `uc
+"66 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+[e E15387 connection_modes `uc
 STARTING 0
 PAIRED 1
 UNPAIRED 2
 PAIRING 3
 DISCONNECTED 4
 ]
-"188
-[e E15401 returns `uc
+"187
+[e E15393 returns `uc
 SUCCESS 0
 FAILED 1
 TX_ERROR 2
@@ -137,36 +137,36 @@ TX_ERROR 2
 [v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
 "6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eewrite.c
 [v _eeprom_write eeprom_write `(v  1 e 1 0 ]
-"72 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"71 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _ClearIndicators ClearIndicators `(v  1 e 1 0 ]
-"80
+"79
 [v _SetIndication SetIndication `(v  1 e 1 0 ]
 [v i1_SetIndication SetIndication `(v  1 e 1 0 ]
-"97
+"96
 [v _goto_mode goto_mode `(v  1 e 1 0 ]
-"121
+"120
 [v _CheckResponse CheckResponse `(uc  1 e 1 0 ]
-"160
+"159
 [v _connect_socket connect_socket `(v  1 e 1 0 ]
-"168
+"167
 [v _WaitResponse WaitResponse `(v  1 e 1 0 ]
-"182
+"181
 [v _get_response get_response `(uc  1 e 1 0 ]
-"198
+"197
 [v _send_message send_message `(v  1 e 1 0 ]
-"207
+"206
 [v _Pair Pair `(uc  1 e 1 0 ]
-"224
+"223
 [v _Validate Validate `(uc  1 e 1 0 ]
-"242
+"241
 [v _Knock Knock `(uc  1 e 1 0 ]
-"264
+"263
 [v _connect_network connect_network `(v  1 e 1 0 ]
-"269
+"277
 [v _blink blink `(v  1 e 1 0 ]
-"273
+"281
 [v _setFlag setFlag `(v  1 e 1 0 ]
-"278
+"286
 [v _main main `(v  1 e 1 0 ]
 "75 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -190,8 +190,6 @@ TX_ERROR 2
 [v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
 "29 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/EXAMPLE_WiFly.c
 [v _WiFly_CheckResponse WiFly_CheckResponse `(v  1 e 1 0 ]
-"43
-[v _WiFly_Example_InitializeAsClient WiFly_Example_InitializeAsClient `(v  1 e 1 0 ]
 "51 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 "87 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/mcc.c
@@ -282,19 +280,19 @@ TX_ERROR 2
 [v _WiFly_SaveConfig WiFly_SaveConfig `(v  1 e 1 0 ]
 "155
 [v _WiFly_FactoryReset WiFly_FactoryReset `(v  1 e 1 0 ]
-[s S1636 . 1 `uc 1 C 1 0 :1:0 
+[s S1656 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
 `uc 1 nPD 1 0 :1:3 
 `uc 1 nTO 1 0 :1:4 
 ]
 "129 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f18875.h
-[s S1642 . 1 `uc 1 CARRY 1 0 :1:0 
+[s S1662 . 1 `uc 1 CARRY 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ZERO 1 0 :1:2 
 ]
-[u S1646 . 1 `S1636 1 . 1 0 `S1642 1 . 1 0 ]
-[v _STATUSbits STATUSbits `VES1646  1 e 1 @3 ]
+[u S1666 . 1 `S1656 1 . 1 0 `S1662 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES1666  1 e 1 @3 ]
 [s S1215 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
@@ -303,7 +301,7 @@ TX_ERROR 2
 "362
 [u S1220 . 1 `S1215 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES1220  1 e 1 @11 ]
-[s S1414 . 1 `uc 1 RB0 1 0 :1:0 
+[s S1429 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -313,9 +311,9 @@ TX_ERROR 2
 `uc 1 RB7 1 0 :1:7 
 ]
 "461
-[u S1423 . 1 `S1414 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES1423  1 e 1 @13 ]
-[s S1393 . 1 `uc 1 RC0 1 0 :1:0 
+[u S1438 . 1 `S1429 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1438  1 e 1 @13 ]
+[s S1408 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -325,8 +323,8 @@ TX_ERROR 2
 `uc 1 RC7 1 0 :1:7 
 ]
 "523
-[u S1402 . 1 `S1393 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1402  1 e 1 @14 ]
+[u S1417 . 1 `S1408 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1417  1 e 1 @14 ]
 "668
 [v _TRISA TRISA `VEuc  1 e 1 @17 ]
 "730
@@ -566,7 +564,7 @@ TX_ERROR 2
 [v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
 "23421
 [v _NVMDATH NVMDATH `VEuc  1 e 1 @2077 ]
-[s S1590 . 1 `uc 1 RD 1 0 :1:0 
+[s S1610 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -575,8 +573,8 @@ TX_ERROR 2
 `uc 1 NVMREGS 1 0 :1:6 
 ]
 "23487
-[u S1598 . 1 `S1590 1 . 1 0 ]
-[v _NVMCON1bits NVMCON1bits `VES1598  1 e 1 @2078 ]
+[u S1618 . 1 `S1610 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES1618  1 e 1 @2078 ]
 "23527
 [v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
 "23591
@@ -647,17 +645,17 @@ TX_ERROR 2
 [v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
 "362
 [v _hexpowers hexpowers `DCC[4]ui  1 s 8 hexpowers ]
-"55 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"54 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _failedStr failedStr `[7]uc  1 e 7 0 ]
-"56
+"55
 [v _errStr errStr `[4]uc  1 e 4 0 ]
-"66
+"65
 [v _UID UID `uc  1 e 1 0 ]
-"67
+"66
 [v _mode mode `uc  1 e 1 0 ]
-"68
+"67
 [v _pingTime pingTime `uc  1 e 1 0 ]
-"70
+"69
 [v _indStatus indStatus `uc  1 e 1 0 ]
 [s S572 . 20 `*.37(uc 1 DataReady 2 0 `*.37(v 1 Initialize 2 2 `*.37(uc 1 Read 2 4 `*.37(v 1 RxDefaultISR 2 6 `*.37(v 1 SetRxISR 2 8 `*.37(v 1 SetTxISR 2 10 `*.37(uc 1 TransmitDone 2 12 `*.37(uc 1 TransmitReady 2 14 `*.37(v 1 TxDefaultISR 2 16 `*.37(v 1 Write 2 18 ]
 "29 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/drivers/uart.c
@@ -700,10 +698,10 @@ TX_ERROR 2
 [v _openStr openStr `DCC[5]uc  1 e 5 0 ]
 "51
 [v _inCMD inCMD `uc  1 e 1 0 ]
-"278 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"286 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"333
+"341
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eeread.c
 [v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
@@ -714,19 +712,12 @@ TX_ERROR 2
 [v eeprom_read@addr addr `uc  1 a 1 1 ]
 "12
 } 0
-"264 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"263 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _connect_network connect_network `(v  1 e 1 0 ]
 {
-[v connect_network@ssid ssid `*.25DCCuc  1 p 2 74 ]
-[v connect_network@passwd passwd `*.25DCCuc  1 p 2 76 ]
-"267
-} 0
-"43 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/EXAMPLE_WiFly.c
-[v _WiFly_Example_InitializeAsClient WiFly_Example_InitializeAsClient `(v  1 e 1 0 ]
-{
-[v WiFly_Example_InitializeAsClient@ssid ssid `*.25DCCuc  1 p 2 70 ]
-[v WiFly_Example_InitializeAsClient@password password `*.25DCCuc  1 p 2 72 ]
-"54
+[v connect_network@ssid ssid `*.25DCCuc  1 p 2 70 ]
+[v connect_network@passwd passwd `*.25DCCuc  1 p 2 72 ]
+"275
 } 0
 "115 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/WiFly.c
 [v _WiFly_SendCMD_SingleArg WiFly_SendCMD_SingleArg `(v  1 e 1 0 ]
@@ -759,16 +750,16 @@ TX_ERROR 2
 {
 "147
 } 0
-"224 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"223 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _Validate Validate `(uc  1 e 1 0 ]
 {
-"227
-[v Validate@valString valString `[13]uc  1 a 13 0 ]
-"225
-[v Validate@returnVal returnVal `uc  1 a 1 13 ]
 "226
-[v Validate@F15444 F15444 `[13]uc  1 s 13 F15444 ]
-"240
+[v Validate@valString valString `[13]uc  1 a 13 0 ]
+"224
+[v Validate@returnVal returnVal `uc  1 a 1 13 ]
+"225
+[v Validate@F15436 F15436 `[13]uc  1 s 13 F15436 ]
+"239
 } 0
 "87 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -831,15 +822,15 @@ TX_ERROR 2
 [v EUSART_SetRxInterruptHandler@handler handler `*.37v  1 p 2 1 ]
 "218
 } 0
-"207 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"206 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _Pair Pair `(uc  1 e 1 0 ]
 {
-"209
-[v Pair@pairString pairString `[9]uc  1 a 9 0 ]
 "208
+[v Pair@pairString pairString `[9]uc  1 a 9 0 ]
+"207
 [v Pair@returnVal returnVal `uc  1 a 1 9 ]
-[v Pair@F15440 F15440 `[9]uc  1 s 9 F15440 ]
-"222
+[v Pair@F15432 F15432 `[9]uc  1 s 9 F15432 ]
+"221
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eewrite.c
 [v _eeprom_write eeprom_write `(v  1 e 1 0 ]
@@ -850,31 +841,31 @@ TX_ERROR 2
 [v eeprom_write@addr addr `uc  1 a 1 2 ]
 "9
 } 0
-"242 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"241 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _Knock Knock `(uc  1 e 1 0 ]
 {
-"246
-[v Knock@knockString knockString `[10]uc  1 a 10 2 ]
-"244
-[v Knock@returnVal returnVal `uc  1 a 1 12 ]
 "245
-[v Knock@F15448 F15448 `[10]uc  1 s 10 F15448 ]
-"262
+[v Knock@knockString knockString `[10]uc  1 a 10 2 ]
+"243
+[v Knock@returnVal returnVal `uc  1 a 1 12 ]
+"244
+[v Knock@F15440 F15440 `[10]uc  1 s 10 F15440 ]
+"261
 } 0
-"198
+"197
 [v _send_message send_message `(v  1 e 1 0 ]
 {
 [v send_message@message message `*.4DCCuc  1 a 1 wreg ]
 [v send_message@message message `*.4DCCuc  1 a 1 wreg ]
 [v send_message@message message `*.4DCCuc  1 a 1 76 ]
-"205
+"204
 } 0
-"160
+"159
 [v _connect_socket connect_socket `(v  1 e 1 0 ]
 {
 [v connect_socket@addr addr `*.25DCCuc  1 p 2 72 ]
 [v connect_socket@port port `*.25DCCuc  1 p 2 74 ]
-"166
+"165
 } 0
 "124 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/WiFly.c
 [v _WiFly_SendCMD_DoubleArg WiFly_SendCMD_DoubleArg `(v  1 e 1 0 ]
@@ -991,28 +982,28 @@ TX_ERROR 2
 [v WiFly_CheckRecv@chkString chkString `*.25DCCuc  1 p 2 6 ]
 "93
 } 0
-"121 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"120 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _CheckResponse CheckResponse `(uc  1 e 1 0 ]
 {
-"130
+"129
 [v CheckResponse@input input `uc  1 a 1 8 ]
-"125
-[v CheckResponse@i2 i2 `ui  1 a 2 11 ]
-"123
-[v CheckResponse@i1 i1 `ui  1 a 2 9 ]
-"127
-[v CheckResponse@i3 i3 `ui  1 a 2 6 ]
 "124
-[v CheckResponse@length2 length2 `ui  1 a 2 4 ]
+[v CheckResponse@i2 i2 `ui  1 a 2 11 ]
 "122
-[v CheckResponse@length1 length1 `ui  1 a 2 2 ]
+[v CheckResponse@i1 i1 `ui  1 a 2 9 ]
 "126
-[v CheckResponse@length3 length3 `ui  1 a 2 0 ]
+[v CheckResponse@i3 i3 `ui  1 a 2 6 ]
+"123
+[v CheckResponse@length2 length2 `ui  1 a 2 4 ]
 "121
+[v CheckResponse@length1 length1 `ui  1 a 2 2 ]
+"125
+[v CheckResponse@length3 length3 `ui  1 a 2 0 ]
+"120
 [v CheckResponse@chkString1 chkString1 `*.25DCCuc  1 p 2 6 ]
 [v CheckResponse@chkString2 chkString2 `*.4DCCuc  1 p 1 8 ]
 [v CheckResponse@chkString3 chkString3 `*.4DCCuc  1 p 1 9 ]
-"158
+"157
 } 0
 "67 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/WiFly.c
 [v _WiFly_SendString WiFly_SendString `(v  1 e 1 0 ]
@@ -1037,20 +1028,20 @@ TX_ERROR 2
 {
 "59
 } 0
-"182 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"181 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _get_response get_response `(uc  1 e 1 0 ]
 {
-"185
+"184
 [v get_response@status status `uc  1 a 1 9 ]
-"196
+"195
 } 0
-"97
+"96
 [v _goto_mode goto_mode `(v  1 e 1 0 ]
 {
 [v goto_mode@target target `uc  1 a 1 wreg ]
 [v goto_mode@target target `uc  1 a 1 wreg ]
 [v goto_mode@target target `uc  1 a 1 2 ]
-"119
+"118
 } 0
 "127 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/tmr4.c
 [v _TMR4_StopTimer TMR4_StopTimer `(v  1 e 1 0 ]
@@ -1092,29 +1083,29 @@ TX_ERROR 2
 {
 "114
 } 0
-"80 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"79 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _SetIndication SetIndication `(v  1 e 1 0 ]
 {
 [v SetIndication@set set `uc  1 a 1 wreg ]
 [v SetIndication@set set `uc  1 a 1 wreg ]
 [v SetIndication@set set `uc  1 a 1 1 ]
-"95
+"94
 } 0
-"72
+"71
 [v _ClearIndicators ClearIndicators `(v  1 e 1 0 ]
 {
-"78
+"77
 } 0
-"168
+"167
 [v _WaitResponse WaitResponse `(v  1 e 1 0 ]
 {
-"170
-[v WaitResponse@i i `ui  1 a 2 2 ]
 "169
-[v WaitResponse@length length `ui  1 a 2 0 ]
+[v WaitResponse@i i `ui  1 a 2 2 ]
 "168
+[v WaitResponse@length length `ui  1 a 2 0 ]
+"167
 [v WaitResponse@chkString chkString `*.25DCCuc  1 p 2 6 ]
-"180
+"179
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
@@ -1167,10 +1158,10 @@ TX_ERROR 2
 {
 "187
 } 0
-"273 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"281 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _setFlag setFlag `(v  1 e 1 0 ]
 {
-"276
+"284
 } 0
 "127 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/tmr4.c
 [v i1_TMR4_StopTimer TMR4_StopTimer `(v  1 e 1 0 ]
@@ -1192,18 +1183,18 @@ TX_ERROR 2
 {
 "187
 } 0
-"269 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
+"277 C:\Users\C17239\MPLABXProjects\doorbellMigrated\main.c
 [v _blink blink `(v  1 e 1 0 ]
 {
-"271
+"279
 } 0
-"80
+"79
 [v i1_SetIndication SetIndication `(v  1 e 1 0 ]
 {
 [v i1SetIndication@set set `uc  1 a 1 wreg ]
 [v i1SetIndication@set set `uc  1 a 1 wreg ]
 [v i1SetIndication@set set `uc  1 a 1 0 ]
-"95
+"94
 } 0
 "173 C:\Users\C17239\MPLABXProjects\doorbellMigrated\mcc_generated_files/eusart.c
 [v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
