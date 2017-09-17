@@ -1,4 +1,4 @@
-This project is composed of two portions, an embdeed portion and a server portion.
+This project is composed of two portions, an embedded portion and a server portion.
 The embdeed portion receives the doorbell press, and sends that press to the server.
 The server then sends an email to the email address associated with the doorbell, which can be set by running the email_setter.py utility.
 Multiple doorbells are supported (up to 15), and each has a UID associated with it. This UID is indicated by a binary pattern on the LED output of the Curiosity board.
